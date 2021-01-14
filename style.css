@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  align-items: center;
+  background: black;
+  display: flex;
+  padding: 1em;
+}
+
+.navbar__logo {
+  height: 32px;
+  margin-right: 2em;
+  width: 76px;
+}
+
+.navbar__links {
+  display: flex;
+}
+
+.navbar__link {
+  color: white;
+  margin: 0 .5em;
+  text-decoration: none;
+}
+
+.hero {
+  background: #999;
+  padding: 5%;
+}
+
+.main {
+  flex: 1 1 auto;
+  margin: auto;
+  max-width: 40em;
+  padding: 5%;
+}
+
+.footer {
+  background: #999;
+  padding: 5%;
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+.form-group__label {
+  display: block;
+}
+
+.form-group__input {
+  display: block;
+  width: 100%;
+}

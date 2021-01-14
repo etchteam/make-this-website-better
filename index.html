@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register to work at Etch</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize-css@2.3.1/normalize.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="page">
+      <div class="navbar">
+        <img class="navbar__logo" src="./assets/logo.svg">
+
+        <div class="navbar__links">
+          <a href="https://etch.co/team" target="_blank" class="navbar__link">Team</a>
+          <a href="https://etch.co/work" target="_blank" class="navbar__link">Work</a>
+          <a href="https://etch.co/makes" target="_blank" class="navbar__link">Makes</a>
+          <a href="https://etch.co/the" target="_blank" class="navbar__link">The</a>
+          <a href="https://etch.co/dream" target="_blank" class="navbar__link">Dream</a>
+          <a href="https://etch.co/work" target="_blank" class="navbar__link">Work</a>
+        </div>
+      </div>
+      <div class="hero">
+        <h1 class="hero__title">Register to work at Etch</h1>
+        <p class="hero__subtitle">
+          Simply fill in this form with your details to register your 
+          interest for working at <a href="https://etch.co" target="_blank">Etch</a>.
+        </p>
+      </div>
+      
+      <div class="main">
+        <form class="form" action="https://formspree.io/f/xaylazjw" method="POST">
+          <input type="hidden" name="id" value="123456">
+
+          <div class="form-group">
+            <label class="form-group__label">Name</label>
+            <input class="form-group__input" type="text" name="name">
+          </div>
+
+          <div class="form-group">
+            <label class="form-group__label">Email</label>
+            <input class="form-group__input" type="text" name="email">
+          </div>
+
+          <div class="form-group">
+            <label class="form-group__label">Date of birth</label>
+            <input class="form-group__input" type="text" name="dob">
+          </div>
+
+          <div class="form-group">
+            <label class="form-group__label">Telephone number</label>
+            <input class="form-group__input" type="text" name="telephone">
+          </div>
+
+          <div class="form-group">
+            <label class="form-group__label">Address</label>
+            <input class="form-group__input" type="text" name="address">
+          </div>
+
+          <div class="form-group">
+            <label class="form-group__label">Number of years experience</label>
+            <input class="form-group__input" type="text" name="years">
+          </div>
+
+          <div class="form-group">
+            <label class="form-group__label">Favourite web development topics</label>
+            <input class="form-group__checkbox" type="checkbox" name="faves[]"> Hex colours<br />
+            <input class="form-group__checkbox" type="checkbox" name="faves[]"> Accessibility<br />
+            <input class="form-group__checkbox" type="checkbox" name="faves[]"> Node modules<br />
+            <input class="form-group__checkbox" type="checkbox" name="faves[]"> Javascript frameworks<br />
+            <input class="form-group__checkbox" type="checkbox" name="faves[]"> BBQ<br />
+          </div>
+          
+          <div class="form-group">
+            <label class="form-group__label">Why I want to work at Etch</label>
+            <textarea name="why" class="form-group__input"></textarea>
+          </div>
+
+
+          <button>I want to work at Etch</button>
+        </form>
+      </div>
+
+      <div class="footer">
+        &copy;2020 Etch Software Ltd.
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
