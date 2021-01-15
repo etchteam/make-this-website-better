@@ -5,6 +5,7 @@ body {
 
 .page {
   display: flex;
+  background-color: rgb(215, 215, 250);
   flex-direction: column;
   min-height: 100vh;
 }
@@ -38,8 +39,10 @@ body {
 }
 
 .main {
+  background-color: rgb(198, 198, 255);
+  box-shadow: 0 7px 20px 7px rgba(194, 194, 194, 0.5);
   flex: 1 1 auto;
-  margin: auto;
+  margin: 40px auto;
   max-width: 40em;
   padding: 5%;
 }
