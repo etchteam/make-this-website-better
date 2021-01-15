@@ -15,3 +15,21 @@ Logo: rgb(255,102,102) & rgb(255,0,102)
 \#fff0f0
 \#336 - rgb(51,51,102)
 rgb(198,198,255)
+
+
+## Why My Changes?
+
+- navbar hover transition
+  - care about finer details - not too noticeable, but professional
+  - cool/funky feature whilst staying professional
+
+- Colour scheme
+  - saw its about the company, stick to same scheme
+  - add a few similar colours to expand and make it more personal to me
+
+- Move nav bar to middle
+  - Mirror what is currently on your website - CONTINUITY
+
+
+- Same font family
+  - Continuity
