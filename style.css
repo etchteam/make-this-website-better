@@ -11,7 +11,7 @@ body {
 
 .navbar {
   align-items: center;
-  background: black;
+  background: rgb(198, 198, 255);
   display: flex;
   padding: 1em;
 }
@@ -27,7 +27,7 @@ body {
 }
 
 .navbar__link {
-  color: white;
+  color: rgb(0, 0, 0);
   margin: 0 .5em;
   text-decoration: none;
 }
