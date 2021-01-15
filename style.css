@@ -45,6 +45,25 @@ body {
   text-decoration: none;
   font-weight: 800;
   font-size: 26px;
+
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: all 0.5s;
+}
+
+.navbar__link::after {
+  content: '';
+  width: 0px;
+  height: 3px;
+  display: block;
+  background: black;
+  transition: 0.4s;
+}
+
+.navbar__link:hover::after {
+  width: 100%
 }
 
 .hero {
