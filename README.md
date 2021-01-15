@@ -22,6 +22,7 @@ rgb(198,198,255)
 - navbar hover transition
   - care about finer details - not too noticeable, but professional
   - cool/funky feature whilst staying professional
+  - techy, mirroring Etch as a business
 
 - Colour scheme
   - saw its about the company, stick to same scheme
@@ -33,3 +34,8 @@ rgb(198,198,255)
 
 - Same font family
   - Continuity
+
+- hide address until clicked
+  - cleaner website
+  - easier to see everything first
+  - techy feature - Etch is techy, need to adjust for other businesses
