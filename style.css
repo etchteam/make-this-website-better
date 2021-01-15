@@ -5,6 +5,10 @@ body {
   font-family: 'Nunito Sans', 'sans-serif';
 }
 
+body > * {
+  color: rgb(34, 34, 68);
+}
+
 .page {
   display: flex;
   background-color: rgb(215, 215, 250);
@@ -59,7 +63,7 @@ body {
   width: 0px;
   height: 3px;
   display: block;
-  background: black;
+  background: rgb(34, 34, 68);
   transition: 0.4s;
 }
 
@@ -74,12 +78,13 @@ body {
 }
 
 .main {
+  color: rgb(34, 34, 68);
   background-color: rgb(198, 198, 255);
   box-shadow: 0 7px 20px 7px rgba(194, 194, 194, 0.5);
   flex: 1 1 auto;
   margin: 40px auto;
   max-width: 40em;
-  padding: 5%;
+  padding: 4% 5%;
 }
 
 .footer {
@@ -88,7 +93,7 @@ body {
 }
 
 .form-group {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .form-group__label {
@@ -98,4 +103,11 @@ body {
 .form-group__input {
   display: block;
   width: 100%;
+  border: 0;
+  background-color: inherit;
+  border-bottom: 1px solid rgb(34, 34, 68);
+}
+
+.form-group__input:focus {
+  outline: none;
 }
