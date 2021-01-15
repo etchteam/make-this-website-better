@@ -31,12 +31,12 @@ body {
   height: 32px;
   margin-right: 2em;
   width: 76px;
+  margin-left: 8%;
 }
 
 .navbar__links {
   display: flex;
   margin: auto;
-  /* margin-left: -76px; */
 }
 
 .navbar__link {
