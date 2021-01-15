@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', 'sans-serif';
 }
 
 .page {
@@ -11,13 +13,21 @@ body {
 }
 
 .navbar {
+
   align-items: center;
-  background: rgb(198, 198, 255);
+  /* background: rgb(198, 198, 255); */
+  background-color: rgb(215, 215, 250);
+  /* background-color: rgb(51, 51, 102); */
+  /* background-color: rgb(34, 34, 68); */
   display: flex;
   padding: 1em;
+  height: 32px;
 }
 
+
+
 .navbar__logo {
+  position: absolute;
   height: 32px;
   margin-right: 2em;
   width: 76px;
@@ -25,17 +35,22 @@ body {
 
 .navbar__links {
   display: flex;
+  margin: auto;
+  /* margin-left: -76px; */
 }
 
 .navbar__link {
-  color: rgb(0, 0, 0);
+  color: rgb(34, 34, 68);
   margin: 0 .5em;
   text-decoration: none;
+  font-weight: 800;
+  font-size: 26px;
 }
 
 .hero {
-  background: #999;
-  padding: 5%;
+  /* background: #999; */
+  padding: 0 5%;
+  height: 7em;
 }
 
 .main {
