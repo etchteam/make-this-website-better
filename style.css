@@ -10,6 +10,7 @@ body {
   background-color: rgb(215, 215, 250);
   flex-direction: column;
   min-height: 100vh;
+  padding-top: 20px;
 }
 
 .navbar {
@@ -31,7 +32,7 @@ body {
   height: 32px;
   margin-right: 2em;
   width: 76px;
-  margin-left: 8%;
+  margin-left: 60px;
 }
 
 .navbar__links {
