@@ -20,10 +20,7 @@ body > * {
 .navbar {
 
   align-items: center;
-  /* background: rgb(198, 198, 255); */
   background-color: rgb(215, 215, 250);
-  /* background-color: rgb(51, 51, 102); */
-  /* background-color: rgb(34, 34, 68); */
   display: flex;
   padding: 1em;
   height: 32px;
@@ -72,7 +69,6 @@ body > * {
 }
 
 .hero {
-  /* background: #999; */
   padding: 0 5%;
   height: 7em;
 }
@@ -84,6 +80,7 @@ body > * {
   flex: 1 1 auto;
   margin: 40px auto;
   max-width: 40em;
+  width: 30em;
   padding: 4% 5%;
 }
 
@@ -113,12 +110,11 @@ body > * {
   color: rgba(34, 34, 68, 0.7);
 }
 
-.form-group__input:focus {
+.form-group__input:focus, .form-group__input-dropdown:focus {
   outline: none;
 }
 
 .form-group__address {
-  /* width: 100%; */
   border-bottom: 1px solid rgb(34, 34, 68);
 }
 
@@ -128,7 +124,6 @@ body > * {
 
 .clicked {
   border-bottom: none;
-  /* display: none; */
   text-align: right;
   margin-bottom: 0.5em;
 }
@@ -142,10 +137,7 @@ body > * {
 }
 
 .view {
-  /* margin-top: 0.5em; */
   display: block;
-
-  /* border: 1px solid rgb(34, 34, 68); */
 }
 
 .form-group__input-dropdown {
@@ -158,8 +150,17 @@ body > * {
 
 }
 
+.same-line {
+  display: flex;
+  /* padding-left: 10%; */
+}
 
+.same-line-input {
+  width: 35%;
+  margin: 0;
+}
 
-.form-group__input-dropdown:focus {
-  outline: none;
+.same-line-input.left {
+  margin-left: 10%;
+  margin-right: 9.5%;
 }
