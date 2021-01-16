@@ -6,6 +6,9 @@
     <!--PH So we have a second stylesheet giving us a helping hand. Good to know.-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize-css@2.3.1/normalize.css">
     <link rel="stylesheet" href="./style.css">
+    <!-- Add icon library font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b894a9de32.js" crossorigin="anonymous"></script>
 </head>
   <body>
     <div class="page">
@@ -88,9 +91,35 @@
       </div>
 
       <div class="footer">
-        <!--PH I want to use the triangle valley as the footer. I will try it.-->
-        <img class="navbar__logo" src="./assets/logo.svg">
-        &copy;2020 Etch Software Ltd.
+          <!--PH I want to use the triangle valley as the footer. I will try it.-->
+          <img class="navbar__logo" src="./assets/logo.svg">
+          &copy;2020 Etch Software Ltd.
+          <!--PH This is shamelessly takeon from the etch website. I will see if I can get it working.-->
+          <div class="contact-details__social">
+              <ul class="contact-details__social-list">
+                  <li class="contact-details__social-item">
+                      <!--PH Managed to hook this up to an external icons library using CSS, I will leave in the aria label as it is for accessability.-->
+                      <a href="https://twitter.com/etch" class="contact-details__social-link" aria-label="Twitter">
+                          <i class="fab fa-twitter"></i>
+                      </a>
+                  </li>
+                  <li class="contact-details__social-item">
+                  <a href="https://blog.etch.team" target="_blank" rel="noopener noreferrer" class="contact-details__social-link" aria-label="Medium">
+                      <i class="fab fa-medium-m"></i>
+                  </a>
+                  </li>
+                  <li class="contact-details__social-item">
+                  <a href="https://instagram.com/etch.team" class="contact-details__social-link" aria-label="Instagram">
+                      <i class="fab fa-instagram"></i>
+                      </a>
+                  </li>
+                  <li class="contact-details__social-item">
+                    <a href="https://github.com/etchteam" class="contact-details__social-link" aria-label="Github">
+                      <i class="fab fa-github-alt"></i>
+                    </a>
+                  </li>
+              </ul>
+          </div>
       </div>
     </div>
     <script src="./script.js"></script>

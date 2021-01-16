@@ -130,3 +130,72 @@ body {
 .fade-in.appear {
     opacity: 1;
 }
+
+/* Not sure whether this gives me what I need here yet. */
+.contact-details__social{
+    opacity: 1;
+    padding: 0 7.5% 7.5%;
+    transform: translate(4em);
+}
+
+
+/* So this section lays it out in a row, something to do with the flex display.*/
+.contact-details__social-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0 -.5em;
+    padding: 0;
+}
+
+.contact-details__social-item {
+    margin-bottom: -1em;
+    padding: 0 .5em;
+}
+
+.contact-details__social-link {
+    display: block;
+    padding: .5em 0;
+}
+
+.contact-details__social-link-icon {
+    font-size: 1.25em;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* Medium */
+.fa-twitter {
+    background: #;
+    color: white;
+}
