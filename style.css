@@ -66,48 +66,66 @@ body {
   opacity: 1;
 }
 
+/*****************************************************************************/
+/*  Section n - Styles for the form                                          */
+/*****************************************************************************/
+
 .form-group {
-  margin-bottom: 1em;
+  /*margin-bottom: 1em;*/
+  border: solid 1px #ccc;
+  padding: 0 8px;
+  position: relative;
 }
 
-.form-group__label {
-  display: block;
+.form-group label {
+  /*display: block;*/
+  font-size: 16px;
+  position: absolute;
+  transform-origin: top left;
+  transform: translate(0, 16px) scale(1);
+  transition: all .1s ease-in-out;
 }
 
-.form-group__input {
-  display: block;
-  width: 100%;
+.form-group input {
+  /*display: block;*/
+  /*width: 100%;*/
+  border: none;
+  font-size: 16px;
+  margin: 16px 0 10px;
+  outline: 0;
 }
 
-.form-group__input {
+.form-group.active label {
+    transform: translate(0, 4px) scale(.75);
+}
+
+/*PH added a bit more padding than the standard as it looks a real mess.*/
+
+/*.form-group__input {
     display: block;
     width: 100%;
+    padding: 0.25em;
     border: 1px solid var(--etch_lilac)
-}
+}*/
    
 /* PH  Struggling to add validations that cause things to go red. Will keep trying. */
 /* PH  Got it, didn't call a border a border. */
-.form-group__input:valid {
-    display: block;
-    width: 100%;
+.form-group input:valid {
     border: 1px solid var(--etch_lilac)
 }
 
-.form-group__input:invalid {
-    display: block;
-    width: 100%;
+.form-group input:invalid {
     border: 2px solid var(--etch_red)
 }
 
 /* PH button - adding some style for that horrible button.*/
 .submit {
     background-color: var(--etch_lilac);
-    padding: .5em;
+    padding: 0.5em;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 6px;
     color: black;
-    font-family: 'Oswald';
     font-size: 20px;
     text-decoration: none;
     border: none;
