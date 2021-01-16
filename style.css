@@ -1,3 +1,9 @@
+:root {
+    /* PH This is my take on etch red, your eyes are your problem. */
+    --etch_red: #f53356;
+    --etch_lilac: #c6abff;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -27,14 +33,16 @@ body {
 }
 
 .navbar__link {
-  color: white;
+  /* PH Changed colour from white to etch lilac */
+  color: var(--etch_lilac);
   margin: 0 .5em;
   text-decoration: none;
 }
 
 .hero {
-  background: #999;
-  padding: 5%;
+    /* PH Changed colour from #999 (grey) to etch lilac */
+    background: var(--etch_lilac);
+    padding: 5%;
 }
 
 .main {
@@ -45,8 +53,17 @@ body {
 }
 
 .footer {
-  background: #999;
+  background: white;
+  background-image: url("https://etch.co/images/team/triangle-valley.svg");
+  background-size: cover;
   padding: 5%;
+  opacity: 0;
+  transition: opacity 1000ms ease-in;
+}
+
+/*PH Adding a fade in for the footer using intersection observers. It works!!! */
+.footer.appear {
+  opacity: 1;
 }
 
 .form-group {
@@ -60,4 +77,56 @@ body {
 .form-group__input {
   display: block;
   width: 100%;
+}
+
+.form-group__input {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--etch_lilac)
+}
+   
+/* PH  Struggling to add validations that cause things to go red. Will keep trying. */
+/* PH  Got it, didn't call a border a border. */
+.form-group__input:valid {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--etch_lilac)
+}
+
+.form-group__input:invalid {
+    display: block;
+    width: 100%;
+    border: 2px solid var(--etch_red)
+}
+
+/* PH button - adding some style for that horrible button.*/
+.submit {
+    background-color: var(--etch_lilac);
+    padding: .5em;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 6px;
+    color: black;
+    font-family: 'Oswald';
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+}
+
+ .submit:hover {
+    border: none;
+    /* PH Changed from hardcoding to using a variable for colour. */
+    background: var(--etch_red);
+    color: white;
+    box-shadow: 0px 0px 1px #777;
+ }
+
+  /* PH adding in the fade effect for intersection observers*/
+.fade-in {
+    opacity: 0;
+    transition: opacity 1000ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
 }

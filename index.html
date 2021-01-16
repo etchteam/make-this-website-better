@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Register to work at Etch</title>
+    <!--PH What is this first stylesheet doing? I need to find out if more than one stylesheet is valid. Google says yes.-->
+    <!--PH So we have a second stylesheet giving us a helping hand. Good to know.-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize-css@2.3.1/normalize.css">
     <link rel="stylesheet" href="./style.css">
-  </head>
+</head>
   <body>
     <div class="page">
       <div class="navbar">
@@ -28,7 +30,9 @@
       </div>
       
       <div class="main">
-        <form class="form" action="https://formspree.io/f/xaylazjw" method="POST">
+          <!--PH This is where the form starts. Message to myself.-->
+          <!--PH The form is mine now!!!! Got a formspree account ready to go. -->
+        <form class="form" action="https://formspree.io/f/xdopyqyk" method="POST">
           <input type="hidden" name="id" value="123456">
 
           <div class="form-group">
@@ -36,9 +40,11 @@
             <input class="form-group__input" type="text" name="name">
           </div>
 
+
+        <!--Changing the type here to be email for a bit of client side validation.-->
           <div class="form-group">
             <label class="form-group__label">Email</label>
-            <input class="form-group__input" type="text" name="email">
+            <input class="form-group__input" type="email" name="email" required>
           </div>
 
           <div class="form-group">
@@ -75,12 +81,15 @@
             <textarea name="why" class="form-group__input"></textarea>
           </div>
 
-
-          <button>I want to work at Etch</button>
+          <!--PH Adding a style for the submit button. Ill mess with it in the CSS-->
+          <!--PH Happy with this now. Looks pretty good. -->
+          <button class="submit">I want to work at Etch</button>
         </form>
       </div>
 
       <div class="footer">
+        <!--PH I want to use the triangle valley as the footer. I will try it.-->
+        <img class="navbar__logo" src="./assets/logo.svg">
         &copy;2020 Etch Software Ltd.
       </div>
     </div>
