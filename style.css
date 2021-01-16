@@ -9,7 +9,7 @@ body {
   body { font-size: large; }
 }
 @media (max-width: 500px) {
-  body { font-size: medium; }
+  body { font-size: medium; font-size: calc(0.2em + 1vw); }
 }
 
 body > * {
@@ -175,4 +175,24 @@ body > * {
 .same-line-input.left {
   margin-left: 10%;
   margin-right: 9.5%;
+}
+
+.form textarea {
+  height: 1.2em;
+  /* background-color: #FFFFFF; */
+  overflow-y: hidden;
+}
+
+.form button {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(255, 0, 102);
+  color: rgb(51, 51, 102);
+  /* color: rgb(34, 34, 68); */
+  font-weight: 800;
+  padding: 0.2em 0.2em;
+  /* border: none; */
+  border: 3px solid rgb(255, 102, 102);
+  box-shadow: 0 0 10px 5px rgb(172, 172, 232);
 }
