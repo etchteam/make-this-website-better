@@ -196,3 +196,7 @@ body > * {
   border: 3px solid rgb(255, 102, 102);
   box-shadow: 0 0 10px 5px rgb(172, 172, 232);
 }
+
+.form-group__checkbox:checked + span {
+  color: rgb(255, 0, 102);
+}
