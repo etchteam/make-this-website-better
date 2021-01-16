@@ -29,12 +29,14 @@ body > * {
   display: flex;
   padding: 1em;
   height: 2em;
+  width: 100%;
+  position: fixed;
 }
 
 
 
 .navbar__logo {
-  position: absolute;
+  position: fixed;
   height: 32px;
   margin-right: 2em;
   width: 76px;
@@ -42,7 +44,7 @@ body > * {
 }
 
 .navbar__links {
-  position: relative;
+  position: fixed;
   display: flex;
   flex-wrap: wrap;
   left: 50%;
@@ -77,8 +79,11 @@ body > * {
 }
 
 .hero {
+  position: fixed;
+  top: calc(3em + 32px);
   padding: 0 5%;
   height: 7em;
+  width: 100%;
 }
 
 .main {
@@ -86,9 +91,10 @@ body > * {
   background-color: rgb(198, 198, 255);
   box-shadow: 0 7px 20px 7px rgba(194, 194, 194, 0.5);
   flex: 1 1 auto;
-  margin: 40px auto;
+  margin: auto;
+  margin-top: calc(10em + 72px);
+  margin-bottom: 40px;
   max-width: 40em;
-  /* width: 30em; */
   width: 35vw;
   padding: 4% 5%;
   z-index: 2;
@@ -164,7 +170,6 @@ body > * {
 .same-line {
   display: flex;
   flex-wrap: wrap;
-  /* padding-left: 10%; */
 }
 
 .same-line-input {
@@ -178,15 +183,11 @@ body > * {
 }
 
 .form-group textarea {
-  /* height: 1.2em; */
   resize: none;
-  /* background-color: #FFFFFF; */
   width: 100%;
   overflow-y: hidden;
 }
 .form textarea::placeholder {
-  /* padding-top: 1em */
-  /* align-self: center; */
   vertical-align: middle;
 }
 
@@ -202,7 +203,7 @@ body > * {
   /* border: none; */
   border: 3px solid rgb(255, 102, 102);
   box-shadow: 0 0 10px 5px rgb(172, 172, 232);
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .form button:hover {
@@ -217,7 +218,4 @@ body > * {
 
 .mountains-image {
   margin-top: -20em
-  /* position: absolute; */
-  /* width: 150%; */
-  /* transform: translateX(-15%); */
 }
