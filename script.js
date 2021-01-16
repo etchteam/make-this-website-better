@@ -79,8 +79,8 @@ const FloatLabel = (() => {
 
     // get DOM elements
     const init = () => {
-        // PH changed it to look for the form-group class
-        const floatContainers = document.querySelectorAll('.form-group');
+        // PH changed it to look for the form-float class
+        const floatContainers = document.querySelectorAll('.form-float');
 
         floatContainers.forEach((element) => {
 

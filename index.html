@@ -35,59 +35,74 @@
       <div class="main">
           <!--PH This is where the form starts. Message to myself.-->
           <!--PH The form is mine now!!!! Got a formspree account ready to go. -->
-        <form class="form" action="https://formspree.io/f/xdopyqyk" method="POST">
-          <input type="hidden" name="id" value="123456">
+          <form class="form" action="https://formspree.io/f/xdopyqyk" method="POST">
+              <input type="hidden" name="id" value="123456">
 
-          <div class="form-group">
-            <label class="form-group__label">Name</label>
-            <input class="form-group__input" type="text" name="name">
-          </div>
+              <div class="form-group">
+                  <div class="form-float">
+                      <label for="name">Name</label>
+                      <input id="name" type="text" name="name">
+                  </div>
+              </div>
 
 
-        <!--Changing the type here to be email for a bit of client side validation.-->
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" required>
-          </div>
+              <!--Changing the type here to be email for a bit of client side validation.-->
+              <div class="form-group">
+                  <div class="form-float">
+                      <label for="email">Email</label>
+                      <input id="email" type="email" name="email" required>
+                  </div>
+              </div>
 
-          <div class="form-group">
-            <label class="form-group__label">Date of birth</label>
-            <input class="form-group__input" type="date" name="dob">
-          </div>
+              <div class="form-group">
 
-          <div class="form-group">
-            <label class="form-group__label">Telephone number</label>
-            <input class="form-group__input" type="text" name="telephone">
-          </div>
+                  <label class="form-group__label">Date of birth</label>
+                  <input class="form-group__input" type="date" name="dob">
 
-          <div class="form-group">
-            <label class="form-group__label">Address</label>
-            <input class="form-group__input" type="text" name="address">
-          </div>
+              </div>
 
-          <div class="form-group">
-            <label class="form-group__label">Number of years experience</label>
-            <input class="form-group__input" type="text" name="years">
-          </div>
+              <div class="form-group">
+                  <div class="form-float">
+                      <label for="tel">Telephone number</label>
+                      <input id="tel" type="text" name="telephone">
+                  </div>
+              </div>
 
-          <div class="form-group">
-            <label class="form-group__label">Favourite web development topics</label>
-            <input class="form-group__checkbox" type="checkbox" name="faves[]"> Hex colours<br />
-            <input class="form-group__checkbox" type="checkbox" name="faves[]"> Accessibility<br />
-            <input class="form-group__checkbox" type="checkbox" name="faves[]"> Node modules<br />
-            <input class="form-group__checkbox" type="checkbox" name="faves[]"> Javascript frameworks<br />
-            <input class="form-group__checkbox" type="checkbox" name="faves[]"> BBQ<br />
-          </div>
-          
-          <div class="form-group">
-            <label class="form-group__label">Why I want to work at Etch</label>
-            <textarea name="why" class="form-group__input"></textarea>
-          </div>
+              <!--What can we do about address? It doesn't have a simple data type.-->
+              <div class="form-group">
+                <div class="form-float">
+                  <label class="form-group__label">Address</label>
+                  <input class="form-group__input" type="text" name="address">
+                </div>
+              </div>
 
-          <!--PH Adding a style for the submit button. Ill mess with it in the CSS-->
-          <!--PH Happy with this now. Looks pretty good. -->
-          <button class="submit">I want to work at Etch</button>
-        </form>
+              <div class="form-group">
+                <div class="form-float">
+                  <label for="yoe">Number of years experience</label>
+                  <input id="yoe" type="number" name="years">
+                </div>
+              </div>
+
+              <div class="form-group">
+                  <label class="form-group__label">Favourite web development topics</label>
+                  <input class="form-group__checkbox" type="checkbox" name="faves[]"> Hex colours<br />
+                  <input class="form-group__checkbox" type="checkbox" name="faves[]"> Accessibility<br />
+                  <input class="form-group__checkbox" type="checkbox" name="faves[]"> Node modules<br />
+                  <input class="form-group__checkbox" type="checkbox" name="faves[]"> Javascript frameworks<br />
+                  <input class="form-group__checkbox" type="checkbox" name="faves[]"> BBQ<br />
+              </div>
+
+              <div class="form-group">
+                <div class="form-float">
+                  <label for="why">Why I want to work at Etch</label>
+                  <textarea id="why" class="form-group__input"></textarea>
+                </div>
+              </div>
+
+              <!--PH Adding a style for the submit button. Ill mess with it in the CSS-->
+              <!--PH Happy with this now. Looks pretty good. -->
+              <button class="submit">I want to work at Etch</button>
+          </form>
       </div>
 
       <div class="footer">
