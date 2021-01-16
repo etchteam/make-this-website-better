@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1798" height="382" version="1">
+  <linearGradient id="triangle-valley-1" x1="899" x2="899" y1="232" y2="408" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#d6d6ff"/>
+    <stop offset="1" stop-color="#ddf"/>
+  </linearGradient>
+  <path fill="url(#triangle-valley-1)" d="M1036 90l-83 84-41-41-37 37-46-46-17 17-50-51-292 292h858z"/>
+  <linearGradient id="triangle-valley-2" x1="636" x2="636" y1="94" y2="381" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#d0d0ff"/>
+    <stop offset="1" stop-color="#ddf"/>
+  </linearGradient>
+  <path fill="url(#triangle-valley-2)" d="M636 65L319 382h633z"/>
+  <linearGradient id="triangle-valley-3" x1="1186" x2="1186" y1="94" y2="381" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#d0d0ff"/>
+    <stop offset="1" stop-color="#ddf"/>
+  </linearGradient>
+  <path fill="url(#triangle-valley-3)" d="M1208 45l-43 43-22-23-317 317h719z"/>
+  <linearGradient id="triangle-valley-4" x1="420" x2="420" y1="137" y2="382" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#c6c6ff"/>
+    <stop offset="1" stop-color="#ddf"/>
+  </linearGradient>
+  <path fill="url(#triangle-valley-4)" d="M479 20l-38 38-59-58L0 382h841z"/>
+  <linearGradient id="triangle-valley-5" x1="1370" x2="1370" y1="137" y2="382" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#c6c6ff"/>
+    <stop offset="1" stop-color="#ddf"/>
+  </linearGradient>
+  <path fill="url(#triangle-valley-5)" d="M1468 51l-53 53-97-98-376 376h856z"/>
+</svg>

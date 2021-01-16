@@ -91,6 +91,7 @@ body > * {
   /* width: 30em; */
   width: 35vw;
   padding: 4% 5%;
+  z-index: 2;
 }
 
 .footer {
@@ -212,4 +213,11 @@ body > * {
 
 .form-group__checkbox:checked + span {
   color: rgb(255, 0, 102);
+}
+
+.mountains-image {
+  margin-top: -20em
+  /* position: absolute; */
+  /* width: 150%; */
+  /* transform: translateX(-15%); */
 }
