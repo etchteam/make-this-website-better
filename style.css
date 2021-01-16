@@ -146,7 +146,7 @@ body {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: flex-end;
     list-style-type: none;
     margin: 0 -.5em;
     padding: 0;
@@ -166,36 +166,16 @@ body {
     font-size: 1.25em;
 }
 
-/* Style all font awesome icons */
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
+.fab {
+    padding: .05em;
+    font-size: 1.75em;
     text-align: center;
     text-decoration: none;
+    color: var(--etch_red);
+    opacity: 0.7;
 }
 
-    /* Add a hover effect if you want */
-    .fa:hover {
-        opacity: 0.7;
-    }
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-/* Twitter */
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-/* Medium */
-.fa-twitter {
-    background: #;
-    color: white;
+.fab:hover {
+    opacity: 1;
+    transform: translateY(-0.2em);
 }
