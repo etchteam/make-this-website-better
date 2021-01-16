@@ -5,12 +5,12 @@ body {
   font-family: 'Nunito Sans', 'sans-serif';
   font-size: calc(0.2em + 1vw);
 }
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   body { font-size: large; }
 }
 @media (max-width: 500px) {
   body { font-size: medium; font-size: calc(0.2em + 1vw); }
-}
+} */
 
 body > * {
   color: rgb(34, 34, 68);
@@ -25,8 +25,6 @@ body > * {
 }
 
 .navbar {
-
-  /* align-items: center; */
   background-color: rgb(215, 215, 250);
   display: flex;
   padding: 1em;
@@ -161,6 +159,7 @@ body > * {
 
 }
 
+
 .same-line {
   display: flex;
   flex-wrap: wrap;
@@ -177,10 +176,17 @@ body > * {
   margin-right: 9.5%;
 }
 
-.form textarea {
-  height: 1.2em;
+.form-group textarea {
+  /* height: 1.2em; */
+  resize: none;
   /* background-color: #FFFFFF; */
+  width: 100%;
   overflow-y: hidden;
+}
+.form textarea::placeholder {
+  /* padding-top: 1em */
+  /* align-self: center; */
+  vertical-align: middle;
 }
 
 .form button {
@@ -188,13 +194,20 @@ body > * {
   left: 50%;
   transform: translateX(-50%);
   background-color: rgb(255, 0, 102);
-  color: rgb(51, 51, 102);
-  /* color: rgb(34, 34, 68); */
+  /* color: rgb(51, 51, 102); */
+  color: rgb(34, 34, 68);
   font-weight: 800;
   padding: 0.2em 0.2em;
   /* border: none; */
   border: 3px solid rgb(255, 102, 102);
   box-shadow: 0 0 10px 5px rgb(172, 172, 232);
+  transition: 0.5s;
+}
+
+.form button:hover {
+  background-color: rgb(34, 34, 68);
+  color: rgb(255, 0, 102);
+  box-shadow: 0 0 10px 2px rgb(255, 102, 102);
 }
 
 .form-group__checkbox:checked + span {
