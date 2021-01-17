@@ -15,7 +15,8 @@ Visual
 UI
 * Colour changing labels to confirm valid input in fields.
 * Transformation effects indicating interactive links.
-* Calendar for easy selection alternative with min/max dates.  
+* Calendar for easy selection alternative with min/max dates.
+* Removed links to non-existent pages. 
 
 Performance
 * Restricted to using CSS for transitions and backgrounds for faster loading.
