@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   padding: 0;
@@ -84,7 +86,8 @@ body {
   left: 10px;
   transition: 0.4s;
   color: lightgray;
-  margin: 1%
+  margin: 1%;
+  background: white
 }
 
 .form-group__input {
@@ -123,6 +126,18 @@ body {
 #why {
   height: 10rem;
   border: 2px solid lightgray;
+}
+
+.form-button {
+  display: block;
+  padding: 15px;
+  width: 70%;
+  margin: auto;
+  outline: none;
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  background-image: linear-gradient(#EF7D70, #f56278)
 }
 
 
