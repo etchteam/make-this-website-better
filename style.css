@@ -1,9 +1,12 @@
-
-
 body {
   margin: 0;
   padding: 0;
   background: black
+}
+
+:-internal-autofill-previewed,
+:-internal-autofill-selected {
+  box-shadow: 0 0 0 30px white inset
 }
 
 .page {
@@ -25,16 +28,25 @@ body {
   height: 32px;
   margin-right: 2em;
   width: 76px;
+  transition: 0.3s
 }
 
+.navbar__logo:hover {
+  transform: scale(1.1);
+  cursor: pointer
+}
 .navbar__links {
   display: flex;
 }
 
-.navbar__link {
+.navbar__link, .navbar__text {
   color: white;
-  margin: 0 .5em;
+  margin: 0.5em;
   text-decoration: none;
+}
+
+.navbar__link:hover {
+  color: #f56278
 }
 
 .hero {
@@ -68,9 +80,14 @@ body {
 }
 
 .form__logo {
-  height: 8em;
+  height: 7em;
   display: block;
-  margin: auto
+  margin: auto;
+  transition: 0.3s
+}
+
+.form__logo:hover {
+  transform: scale(1.1)
 }
 
 .form-group {
@@ -137,7 +154,13 @@ body {
   border: 0;
   border-radius: 3px;
   color: white;
-  background-image: linear-gradient(#EF7D70, #f56278)
+  background-image: linear-gradient(#EF7D70, #f56278);
+  transition: 0.3s
+}
+
+.form-button:hover {
+  opacity: 0.8;
+  transform: scale(1.1)
 }
 
 input[type="checkbox"] { 
