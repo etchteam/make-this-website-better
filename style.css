@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   font-family: 'Nunito Sans', 'sans-serif';
   font-size: calc(0.2em + 1vw);
+  scroll-behavior: smooth;
 }
 /* @media (max-width: 1000px) {
   body { font-size: large; }
@@ -23,6 +24,7 @@ body > * {
   min-height: 100vh;
   width: 100%;
   padding-top: 1em;
+  padding-bottom: 40px;
   position: fixed;
 }
 
@@ -83,12 +85,17 @@ body > * {
 .hero {
   position: fixed;
   top: calc(3em + 32px);
-  padding: 0 5%;
+  /* left: 5%; */
   height: 7em;
-  width: 100%;
+  display: block;
+}
+
+.hero p {
+  font-size: 0.95em;
 }
 
 .main {
+  position: absolute;
   color: rgb(34, 34, 68);
   background-color: rgb(198, 198, 255);
   box-shadow: 0 7px 20px 7px rgba(194, 194, 194, 0.5);
@@ -98,14 +105,15 @@ body > * {
   width: 35vw;
   padding: 4% 5%;
   z-index: 2;
-  position: relative;
+
   top: calc(10em + 72px);
   left: 50%;
   transform: translateX(-50%);
 }
 
 .footer {
-  background: #999;
+  background-color: rgba(153, 153, 153, 0);
+  color: rgba(34, 34, 68, 0);
   padding: 5%;
   z-index: 1;
   position: fixed;

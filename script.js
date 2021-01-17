@@ -2,6 +2,7 @@ console.log('Connected!')
 
 
 $(document).ready(() => {
+  $('.hero').css('left', '5%')
   let viewDropdown = false
   $('.form-group__address').on('click', () => {
 
@@ -33,5 +34,31 @@ $(document).ready(() => {
       $('.footer').css('background-color', 'rgba(153, 153, 153, 0)')
     }
   })
+
+  $(window).scroll((event) => {
+    let scroll = $(window).scrollTop().valueOf();
+    if (scroll <= 140) {
+      $('.hero').css('left', `${5 + (0.168 * scroll)}%`)
+
+      if (parseFloat($('.hero').offset().left) >= parseFloat($('.main').offset().left)) {
+        $('.hero').css('display', 'none')
+      } else {
+        $('.hero').css('display', 'block')
+      }
+    } else if (scroll > 140) {
+      $('.hero').css('left', '28.5%')
+
+      if (parseFloat($('.hero').offset().left) >= parseFloat($('.main').offset().left)) {
+        $('.hero').css('display', 'none')
+      } else {
+        $('.hero').css('display', 'block')
+      }
+    }
+  })
+  
+  if ($(document).height() <= $(window).height()) {
+    $('.footer').css('color', `rgba(34, 34, 68, 1)`)
+    $('.footer').css('background-color', `rgba(153, 153, 153, 1)`)
+  }
 
 })
