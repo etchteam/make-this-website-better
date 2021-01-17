@@ -71,10 +71,18 @@ const FloatLabel = (() => {
     };
 
     // register events
+    // PH had to add in the if statements so I could use the effect for both standard inputs and the textarea.
     const bindEvents = (element) => {
-        const floatField = element.querySelector('input');
-        floatField.addEventListener('focus', handleFocus);
-        floatField.addEventListener('blur', handleBlur);
+        if (element.querySelector('input') !== null) {
+            const floatField = element.querySelector('input');
+            floatField.addEventListener('focus', handleFocus);
+            floatField.addEventListener('blur', handleBlur);
+
+        } else if (element.querySelector('textarea') !== null) {
+            const floatText = element.querySelector('textarea');
+            floatText.addEventListener('focus', handleFocus);
+            floatText.addEventListener('blur', handleBlur);
+        }
     };
 
     // get DOM elements
@@ -83,9 +91,15 @@ const FloatLabel = (() => {
         const floatContainers = document.querySelectorAll('.form-float');
 
         floatContainers.forEach((element) => {
+            if (element.querySelector('input') !== null) {
+                if (element.querySelector('input').value) {
+                    element.classList.add('active');
+                }
+            } else if (element.querySelector('textarea') !== null) {
 
-            if (element.querySelector('input').value) {
-                element.classList.add('active');
+                if (element.querySelector('textarea').value) {
+                    element.classList.add('active');
+                }
             }
 
             bindEvents(element);
