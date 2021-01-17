@@ -3,15 +3,16 @@
   --secondary: #f56278
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background: black
-}
-
 :-internal-autofill-previewed,
 :-internal-autofill-selected {
   box-shadow: 0 0 0 30px white inset
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  font-family: 'Avenir', Helvetica, sans-serif
 }
 
 .page {
@@ -58,8 +59,7 @@ body {
   background: var(--secondary);
   background-image: linear-gradient(135deg, var(--primary) 75%, transparent 25%);
   padding: 5%;
-  color: white;
-  font-family: Nunito Sans,Sans-Serif
+  color: white
 }
 
 .main {
@@ -129,7 +129,7 @@ body {
 
 .form-group__input:focus + label, 
 .form-group__input:not(:placeholder-shown)  + label,
-#faves, #why {
+#faves, #why-text-area {
   top: -15px;
   left: 0px
 }
@@ -144,7 +144,7 @@ body {
   border-image-slice: 1;
 }
 
-#why {
+#why-text-area {
   height: 10rem;
   border: 2px solid lightgray;
   font-size: 1rem;
@@ -211,7 +211,7 @@ input[type="checkbox"]:checked ~ label {
   z-index: 1;
 }
 
-#checkbox {
+#checkbox-container {
   padding-top: 1rem
 }
 
