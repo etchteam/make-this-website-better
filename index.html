@@ -34,37 +34,37 @@
             <input type="hidden" name="id" value="123456">
 
             <div class="form-group">
+              <input class="form-group__input" type="text" name="name" placeholder="Name" required>
               <label class="form-group__label">Name</label>
-              <input class="form-group__input" type="text" name="name">
             </div>
 
             <div class="form-group">
+              <input class="form-group__input" type="email" name="email" placeholder="Email" required>
               <label class="form-group__label">Email</label>
-              <input class="form-group__input" type="text" name="email">
             </div>
 
             <div class="form-group">
+              <input class="form-group__input" type="date" name="dob" placeholder="Date of birth" max="2003-01-01" min="1951-01-01" required>
               <label class="form-group__label">Date of birth</label>
-              <input class="form-group__input" type="text" name="dob">
             </div>
 
             <div class="form-group">
+              <input class="form-group__input" type="text" name="telephone" value="+44" placeholder="Telephone number" pattern="((\+|00)?[1-9]{2}|0)[1-9]([0-9]){9}" required>
               <label class="form-group__label">Telephone number</label>
-              <input class="form-group__input" type="text" name="telephone">
             </div>
 
             <div class="form-group">
+              <input class="form-group__input" type="text" name="address" placeholder="Address" required>
               <label class="form-group__label">Address</label>
-              <input class="form-group__input" type="text" name="address">
             </div>
 
             <div class="form-group">
+              <input class="form-group__input" type="number" name="years" placeholder="Number of years experience" required>
               <label class="form-group__label">Number of years experience</label>
-              <input class="form-group__input" type="text" name="years">
             </div>
 
             <div class="form-group">
-              <label class="form-group__label">Favourite web development topics</label>
+              <label class="form-group__label" id="faves">Favourite web development topics</label><br/>
               <input class="form-group__checkbox" type="checkbox" name="faves[]"> Hex colours<br />
               <input class="form-group__checkbox" type="checkbox" name="faves[]"> Accessibility<br />
               <input class="form-group__checkbox" type="checkbox" name="faves[]"> Node modules<br />
@@ -73,8 +73,8 @@
             </div>
             
             <div class="form-group">
+              <textarea name="why" id="why" class="form-group__input" placeholder="Why I want to work at Etch" required></textarea>
               <label class="form-group__label">Why I want to work at Etch</label>
-              <textarea name="why" class="form-group__input"></textarea>
             </div>
 
 

@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   background: black
-  
 }
 
 .page {
@@ -41,6 +40,7 @@ body {
   background-image: linear-gradient(135deg, #EF7D70 75%, transparent 25%);
   padding: 5%;
   color: white;
+  font-family: Nunito Sans,Sans-Serif
 }
 
 .main {
@@ -50,14 +50,12 @@ body {
   background: white;
   box-shadow: -3px -5px 20px rgba(0, 0, 0, 0.3);
   align-items: center;
- 
 }
 
 .main-inner {
   flex: 1 1 auto;
   max-width: 40em;
   margin: auto;
-  
 }
 
 .footer {
@@ -76,13 +74,60 @@ body {
 
 .form-group {
   margin-bottom: 1em;
+  position: relative;
 }
 
 .form-group__label {
   display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: 0.4s;
+  color: lightgray;
+  margin: 1%
 }
 
 .form-group__input {
   display: block;
   width: 100%;
+  border: none;
+  border-bottom: 2px solid lightgray;
+  outline: none;
+  font-size: 1.5rem;
+  padding: 1%;
+  color: gray;
+  transition: border-color 0.2s;
 }
+
+::placeholder {
+  color: transparent;
+}
+
+.form-group__input:focus + label, 
+.form-group__input:not(:placeholder-shown)  + label,
+#faves, #why {
+  top: -15px;
+  left: 0px
+}
+
+.form-group__input:valid + label {
+  color: #EF7D70;
+}
+
+.form-group__input:valid {
+  border-width: 3px;
+  border-image: linear-gradient(to right, #EF7D70,white);
+  border-image-slice: 1;
+}
+
+#why {
+  height: 10rem;
+  border: 2px solid lightgray;
+}
+
+
+
+
+
+
+
