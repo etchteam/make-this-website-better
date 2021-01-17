@@ -39,3 +39,11 @@ rgb(198,198,255)
   - cleaner website
   - easier to see everything first
   - techy feature - Etch is techy, need to adjust for other businesses
+
+- highlight checkbox text
+  - easier to see which have been ticked
+
+
+- background fixed with scrolling form
+  - dynamic and edgy
+  - shows skill
