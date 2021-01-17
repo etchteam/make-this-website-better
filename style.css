@@ -1,3 +1,8 @@
+:root {
+  --primary: #EF7D70;
+  --secondary: #f56278
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -13,8 +18,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: #f56278;
-  background-image: linear-gradient(123deg, #EF7D70 54%, transparent 25%);
+  background: var(--secondary);
+  background-image: linear-gradient(123deg, var(--primary) 54%, transparent 25%);
 }
 
 .navbar {
@@ -46,12 +51,12 @@ body {
 }
 
 .navbar__link:hover {
-  color: #f56278
+  color: var(--secondary)
 }
 
 .hero {
-  background: #f56278;
-  background-image: linear-gradient(135deg, #EF7D70 75%, transparent 25%);
+  background: var(--secondary);
+  background-image: linear-gradient(135deg, var(--primary) 75%, transparent 25%);
   padding: 5%;
   color: white;
   font-family: Nunito Sans,Sans-Serif
@@ -73,8 +78,8 @@ body {
 }
 
 .footer {
-  background: #f56278;
-  background-image: linear-gradient(135deg, #EF7D70 30%, transparent 25%);
+  background: var(--secondary);
+  background-image: linear-gradient(135deg, var(--primary) 30%, transparent 25%);
   padding: 5%;
   color: white
 }
@@ -135,7 +140,7 @@ body {
 
 .form-group__input:valid {
   border-width: 3px;
-  border-image: linear-gradient(to right, #EF7D70,white);
+  border-image: linear-gradient(to right, var(--primary),white);
   border-image-slice: 1;
 }
 
@@ -154,7 +159,7 @@ body {
   border: 0;
   border-radius: 3px;
   color: white;
-  background-image: linear-gradient(#EF7D70, #f56278);
+  background-image: linear-gradient(var(--primary), var(--secondary));
   transition: 0.3s
 }
 
@@ -178,8 +183,8 @@ input[type="checkbox"] ~ .custom-checkbox {
 }
 
 input[type="checkbox"]:checked ~ .custom-checkbox { 
-  border: 1px solid #EF7D70;
-  background-color: #EF7D70;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
 }
 
 input[type="checkbox"]:checked ~ .custom-checkbox:after {
@@ -202,7 +207,7 @@ input[type="checkbox"]:checked ~ .checkbox-text {
 }
 
 input[type="checkbox"]:checked ~ label {
-  color: #EF7D70;
+  color: var(--primary);
   z-index: 1;
 }
 
