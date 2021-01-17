@@ -19,4 +19,19 @@ $(document).ready(() => {
     }
   })
 
+
+
+
+  $(window).scroll((event) => {
+    let scroll = $(window).scrollTop().valueOf();
+    if (scroll > 300) {
+      let alpha = (scroll - 300) * 0.0217
+      $('.footer').css('color', `rgba(34, 34, 68, ${alpha})`)
+      $('.footer').css('background-color', `rgba(153, 153, 153, ${alpha})`)
+    } else {
+      $('.footer').css('color', 'rgba(34, 34, 68, 0)')
+      $('.footer').css('background-color', 'rgba(153, 153, 153, 0)')
+    }
+  })
+
 })

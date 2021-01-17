@@ -21,7 +21,11 @@ body > * {
   background-color: rgb(215, 215, 250);
   flex-direction: column;
   min-height: 100vh;
+  /* height: 100vh; */
+  width: 100%;
   padding-top: 1em;
+  /* border: solid #000000; */
+  position: fixed;
 }
 
 .navbar {
@@ -91,18 +95,26 @@ body > * {
   background-color: rgb(198, 198, 255);
   box-shadow: 0 7px 20px 7px rgba(194, 194, 194, 0.5);
   flex: 1 1 auto;
-  margin: auto;
-  margin-top: calc(10em + 72px);
+  /* margin: auto; */
+  /* margin-top: calc(10em + 72px); */
   margin-bottom: 40px;
   max-width: 40em;
   width: 35vw;
   padding: 4% 5%;
   z-index: 2;
+  position: relative;
+  top: calc(10em + 72px);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .footer {
   background: #999;
   padding: 5%;
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .form-group {
@@ -217,5 +229,10 @@ body > * {
 }
 
 .mountains-image {
-  margin-top: -20em
+  margin-top: -20em;
+  /* position: relative; */
 }
+
+/* div {
+  border: solid #000000;
+} */
