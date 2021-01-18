@@ -30,7 +30,7 @@ $(document).ready(() => {
     scrollPercentage = (scroll / $(document).height()) * 100
     if (scrollPercentage < 15) {
       let alpha = (15 - scrollPercentage) * 0.07
-      $('.footer').css('color', `rgba(34, 34, 68, ${alpha})`)
+      $('.footer').css('color', `rgba(198, 198, 255, ${alpha})`)
       $('.footer').css('background-color', `rgba(108, 67, 196, ${alpha})`)
     } else {
       $('.footer').css('color', 'rgba(34, 34, 68, 0)')
