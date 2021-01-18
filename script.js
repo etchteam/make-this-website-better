@@ -28,15 +28,13 @@ $(document).ready(() => {
   $(window).scroll((event) => {
     scroll = parseFloat($(document).height()) - $(window).scrollTop().valueOf() - parseFloat($(window).height())
     scrollPercentage = (scroll / $(document).height()) * 100
-    // if (scroll > 300) {
-    //   let alpha = (scroll - 300) * 0.0217
     if (scrollPercentage < 15) {
       let alpha = (15 - scrollPercentage) * 0.07
       $('.footer').css('color', `rgba(34, 34, 68, ${alpha})`)
-      $('.footer').css('background-color', `rgba(153, 153, 153, ${alpha})`)
+      $('.footer').css('background-color', `rgba(108, 67, 196, ${alpha})`)
     } else {
       $('.footer').css('color', 'rgba(34, 34, 68, 0)')
-      $('.footer').css('background-color', 'rgba(153, 153, 153, 0)')
+      $('.footer').css('background-color', 'rgba(108, 67, 196, 0)')
     }
   })
 
@@ -63,7 +61,7 @@ $(document).ready(() => {
 
   if ($(document).height() <= $(window).height()) {
     $('.footer').css('color', `rgba(34, 34, 68, 1)`)
-    $('.footer').css('background-color', `rgba(153, 153, 153, 1)`)
+    $('.footer').css('background-color', `rgba(108, 67, 196, 1)`)
   }
 
 })
