@@ -29,24 +29,26 @@
     <main>
       <form id="123456" action="https://formspree.io/f/xaylazjw" method="POST">
         <div>
-          <label for="form-name">
-            Name*
+          <label for="name">
+            Name
           </label>
-          <input id="form-name" type="text" name="name" required />
+          <div class="req req-name">required. 3+ char</div>
+          <input id="name" type="text" name="name" required />
         </div>
 
         <div>
-          <label for="form-email">
-            Email*
+          <label for="email">
+            Email
           </label>
-          <input id="form-email" type="text" name="email" required />
+          <div class="req req-email">required. must be valid!</div>
+          <input id="email" type="text" name="email" required />
         </div>
 
         <div>
-          <label for="form-tel">
+          <label for="telephone">
             Telephone number
           </label>
-          <input id="form-tel" type="text" name="telephone" />
+          <input id="telephone" type="text" name="telephone" />
         </div>
 
         <div>
@@ -76,12 +78,17 @@
         </div>
 
         <div>
-          <label for="form-why">Why I want to work at Etch</label>
-          <textarea id="form-why" name="why"></textarea>
+          <label for="why">
+            Why I want to work at Etch
+          </label>
+          <div class="req req-name">200-2000 char</div>
+          <textarea id="why" name="why" minlength="200" maxlength="2000" required></textarea>
+          <div class="req req-why"><span>0</span>/2000</div>
         </div>
 
         <button disabled>I want to work at Etch</button>
       </form>
+      <div class="message"></div>
     </main>
 
     <footer>
