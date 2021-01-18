@@ -1,4 +1,15 @@
+/*****************************************************************************/
+/*  Section 1 - The basic included stuff                                     */
+/*****************************************************************************/
+
+// PH Still nice to know.
 console.log('Connected!')
+
+
+/*****************************************************************************/
+/*  Section 2 - Handles the intersection observer logic                      */
+/*****************************************************************************/
+
 
 // PH this gets the section of the page we want to do things when we intersect.
 // PH it makes sense to try it out for the footer in my case.
@@ -18,6 +29,7 @@ const footerObserver = new IntersectionObserver(function (
     footerObserver
 ) {
     entries.forEach(entry => {
+        // PH not quite sure why the original author chose to use the !not true rather than do this in the positive sense.
         if (!entry.isIntersecting) {
             
             // PH do nothing. I suppose I could add the remove here to repeat the animation.
@@ -34,31 +46,69 @@ const footerObserver = new IntersectionObserver(function (
 footerObserver.observe(footer);
 
 
-//PH This is the one I am going to want to use I think.
-const appearOptions = {
-    threshold: 0,
-    rootMargin: "0px 0px -250px 0px"
-};
+/*****************************************************************************/
+/*  Section 3 - Having a go at some focus on input stuff.                    */
+/*****************************************************************************/
 
-const appearOnScroll = new IntersectionObserver(function (
-    entries,
-    appearOnScroll
-) {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return;
-        } else {
-            entry.target.classList.add("appear");
-            appearOnScroll.unobserve(entry.target);
+
+// PH copied from Joshua Studly's fantastic article, going to understand it and then change it for my purposes.
+const FloatLabel = (() => {
+
+    // add active class
+    const handleFocus = (e) => {
+        const target = e.target;
+        target.parentNode.classList.add('active');
+        target.setAttribute('placeholder', target.getAttribute('data-placeholder'));
+    };
+
+    // remove active class
+    const handleBlur = (e) => {
+        const target = e.target;
+        if (!target.value) {
+            target.parentNode.classList.remove('active');
         }
-    });
-},
-    appearOptions);
+        target.removeAttribute('placeholder');
+    };
 
-faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-});
+    // register events
+    // PH had to add in the if statements so I could use the effect for both standard inputs and the textarea.
+    const bindEvents = (element) => {
+        if (element.querySelector('input') !== null) {
+            const floatField = element.querySelector('input');
+            floatField.addEventListener('focus', handleFocus);
+            floatField.addEventListener('blur', handleBlur);
 
-sliders.forEach(slider => {
-    appearOnScroll.observe(slider);
-});
+        } else if (element.querySelector('textarea') !== null) {
+            const floatText = element.querySelector('textarea');
+            floatText.addEventListener('focus', handleFocus);
+            floatText.addEventListener('blur', handleBlur);
+        }
+    };
+
+    // get DOM elements
+    const init = () => {
+        // PH changed it to look for the form-float class
+        const floatContainers = document.querySelectorAll('.form-float');
+
+        floatContainers.forEach((element) => {
+            if (element.querySelector('input') !== null) {
+                if (element.querySelector('input').value) {
+                    element.classList.add('active');
+                }
+            } else if (element.querySelector('textarea') !== null) {
+
+                if (element.querySelector('textarea').value) {
+                    element.classList.add('active');
+                }
+            }
+
+            bindEvents(element);
+        });
+    };
+
+    return {
+        init: init
+    };
+})();
+
+FloatLabel.init();
