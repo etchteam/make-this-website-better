@@ -1,63 +1,120 @@
-body {
-  margin: 0;
-  padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;900&display=swap');
 
-.page {
+body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
 }
 
-.navbar {
-  align-items: center;
-  background: black;
-  display: flex;
-  padding: 1em;
-}
-
-.navbar__logo {
-  height: 32px;
-  margin-right: 2em;
-  width: 76px;
-}
-
-.navbar__links {
-  display: flex;
-}
-
-.navbar__link {
-  color: white;
-  margin: 0 .5em;
+a {
   text-decoration: none;
 }
 
-.hero {
-  background: #999;
-  padding: 5%;
+a:hover {
+  text-decoration: underline;
 }
 
-.main {
-  flex: 1 1 auto;
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: #000000;
+  padding: 1em;
+}
+
+nav img {
+  width: 76px;
+  height: 32px;
+  margin: auto 1em;
+}
+
+nav div {
   margin: auto;
-  max-width: 40em;
+}
+
+nav a {
+  margin: 0.5em;
+  color: #ffffff;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+header, footer {
+  padding: 5%;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(to bottom right, #ff4848, #6b5bff);
+}
+
+header a {
+  color: #ffffff;
+  font-weight: 900;
+}
+
+main {
+  margin: auto;
   padding: 5%;
 }
 
-.footer {
-  background: #999;
-  padding: 5%;
+form {
+  width: 340px;
+  text-align: center;
+  line-height: 2em;
 }
 
-.form-group {
-  margin-bottom: 1em;
+form div {
+  margin: 1em auto;
+  text-align: left;
 }
 
-.form-group__label {
-  display: block;
-}
-
-.form-group__input {
-  display: block;
+input, textarea, fieldset {
   width: 100%;
+}
+
+fieldset {
+  padding: 0;
+  text-align: left;
+  border: 0;
+}
+
+fieldset label {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+
+input[type='checkbox'] {
+  width: 1em;
+}
+
+button {
+  margin: 1em auto;
+  padding: 5px 10px;
+  color: #ffffff;
+  border: 0;
+  border-radius: 5px;
+  background: #6b5bff;
+}
+
+button:disabled {
+  background: #7d79af;
+}
+
+@media screen and (max-width: 800px) {
+
+  nav {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  form {
+    width: 100%;
+  }
+
 }
