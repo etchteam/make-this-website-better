@@ -17,6 +17,7 @@ There's no right answer, we just want to see what you're interested in.
 - Documentation (doing that right now)
 - Accessibility (both for people with disabilities and things which affect readability for abled people etc)
 - Security/Privacy (not a huge concern b/c there's no way of anything being exposed rn)
+- Actually host the site (what's a bigger improvement than actually being able to access the site?)
 
 - What are the user's objectives? What are the business' objectives?
 
