@@ -12,9 +12,18 @@ There's no right answer, we just want to see what you're interested in.
 
 - Aesthetic changes (grey background on some elements, formatting on form, Team Work Makes The Dream Work)
 - Refactoring existing code
+- Any actual proper bugs
 - Improving efficiency (may not be relevant on a single page)
 - Documentation (doing that right now)
 - Accessibility (both for people with disabilities and things which affect readability for abled people etc)
-- Security/Privacy (not a huge concern b/c there's no backend/database this is being saved into rn but some stuff could still maybe be exposed)
+- Security/Privacy (not a huge concern b/c there's no way of anything being exposed rn)
 
-What are the user's objectives? What are the business' objectives?
+- What are the user's objectives? What are the business' objectives?
+
+#### The Form
+- Looks kinda bland and unprofessional
+- Could use some reworking of the input types (everything is plain text boxes except web dev topics, which also needs changing)
+- "Why I want to work at Etch" text area resizes everything else in the form rather than just that form group div
+- Form can be submitted empty: some options should be allowed to be empty maybe, but some should be required (and marked as such)
+- BBQ isn't a web development topic - yet
+- Should I send a couple Postman requests to the url the form submits to? Probably, just to check the response and see if what the form submits rn is correct
