@@ -32,7 +32,7 @@ There's no right answer, we just want to see what you're interested in.
 #### General Design
 - That grey isn't great and doesn't fit the rest of the colour scheme
 - Team Work Makes The Dream Work is fun but 3/6 being 404s means functionality needs to come over fun here
-- The Etch logo should maybe also be a link?
+- The Etch logo should be a link
 - Add a favicon if I have spare time
 
 #### Non-visible stuff
