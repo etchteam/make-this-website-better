@@ -32,3 +32,8 @@ There's no right answer, we just want to see what you're interested in.
 - That grey sucks and doesn't fit the rest of the colour scheme
 - Team Work Makes The Dream Work is fun but 3/6 being 404s means functionality needs to come over fun here
 - The Etch logo should maybe also be a link?
+- Add a favicon if I have spare time
+
+#### Non-visible stuff
+- script.js doesn't currently do anything, but might change
+- Some of the class names aren't particularly clear
