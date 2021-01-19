@@ -33,20 +33,20 @@ body {
 }
 
 .hero {
-  background: #999;
-  padding: 5%;
+  background: #A7AC9A;
+  padding: 2%;
 }
 
 .main {
   flex: 1 1 auto;
   margin: auto;
   max-width: 40em;
-  padding: 5%;
+  padding: 3%;
 }
 
 .footer {
-  background: #999;
-  padding: 5%;
+  background: #A7AC9A;
+  padding: 2%;
 }
 
 .form-group {
