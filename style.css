@@ -102,6 +102,10 @@ input[type='checkbox'] {
   color: #7d79af;
 }
 
+.alert {
+  color: red;
+}
+
 button {
   margin: 1em auto;
   padding: 5px 10px;
