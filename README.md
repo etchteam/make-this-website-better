@@ -29,7 +29,7 @@ There's no right answer, we just want to see what you're interested in.
 - BBQ isn't a web development topic - yet
 - Sent some postman requests to the submit url, just requires at least one field to be filled
 
-changes: all necessary contact details are required, input types are more suitable (address could be multiple options as fieldset though)
+changes: all necessary contact details are required, input types are more suitable (address could be multiple options as fieldset though), added ids to inputs and for attribute to labels
 
 #### General Design
 - That grey isn't great and doesn't fit the rest of the colour scheme
