@@ -40,7 +40,7 @@ changes: all necessary contact details are required, input types are more suitab
 - The Etch logo should be a link
 - Add a favicon if I have spare time
 
-changes: colour is better (imho), just "Team Work" now, logo is a link
+changes: colour is better (imho), just "Team Work" now, logo is a link, added simple favicon
 
 #### Non-visible stuff
 - Deploy the site
