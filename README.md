@@ -6,6 +6,8 @@ We would like you to fork this repo, make the website better and open a PR that 
 
 There's no right answer, we just want to see what you're interested in.
 
+Now deployed [here](https://upbeat-jennings-f177ea.netlify.app/)
+
 ## Progress Notes
 
 ### Initial Notes/Things to look at
@@ -41,5 +43,6 @@ changes: all necessary contact details are required, input types are more suitab
 changes: colour is better (imho), just "Team Work" now, logo is a link
 
 #### Non-visible stuff
-- script.js doesn't currently do anything, but might change
 - Deploy the site
+
+changes: Now deployed [here](https://upbeat-jennings-f177ea.netlify.app/)
