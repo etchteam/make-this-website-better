@@ -3,6 +3,11 @@ body {
   padding: 0;
 }
 
+textarea {
+  min-width: 15em;
+  min-height: 5em;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -40,7 +45,7 @@ body {
 .main {
   flex: 1 1 auto;
   margin: auto;
-  max-width: 40em;
+  max-width: 15em;
   padding: 3%;
 }
 

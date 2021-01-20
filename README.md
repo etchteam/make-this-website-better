@@ -27,7 +27,9 @@ There's no right answer, we just want to see what you're interested in.
 - "Why I want to work at Etch" text area resizes everything else in the form rather than just that form group div
 - Form can be submitted empty: some options should be allowed to be empty maybe, but some should be required (and marked as such)
 - BBQ isn't a web development topic - yet
-- Should I send a couple Postman requests to the url the form submits to? Probably, just to check the response and see if what the form submits rn is correct
+- Sent some postman requests to the submit url, just requires at least one field to be filled
+
+changes: all necessary contact details are required, input types are more suitable (address could be multiple options as fieldset though)
 
 #### General Design
 - That grey isn't great and doesn't fit the rest of the colour scheme
@@ -35,6 +37,9 @@ There's no right answer, we just want to see what you're interested in.
 - The Etch logo should be a link
 - Add a favicon if I have spare time
 
+changes: colour is better (imho), just "Team Work" now, logo is a link
+
 #### Non-visible stuff
 - script.js doesn't currently do anything, but might change
 - Some of the class names aren't particularly clear
+- Deploy the site
