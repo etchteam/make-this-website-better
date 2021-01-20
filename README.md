@@ -30,7 +30,6 @@ Now deployed [here](https://upbeat-jennings-f177ea.netlify.app/)
 - Form can be submitted empty: some options should be allowed to be empty maybe, but some should be required (and marked as such)
 - BBQ isn't a web development topic - yet
 - Sent some postman requests to the submit url, just requires at least one field to be filled
-- That hidden 'id' field, what's up with that?
 
 changes: all necessary contact details are required, input types are more suitable (address could be multiple options as fieldset though), added ids to inputs and for attribute to labels
 
