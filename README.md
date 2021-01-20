@@ -41,5 +41,4 @@ changes: colour is better (imho), just "Team Work" now, logo is a link
 
 #### Non-visible stuff
 - script.js doesn't currently do anything, but might change
-- Some of the class names aren't particularly clear
 - Deploy the site
