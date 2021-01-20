@@ -46,7 +46,7 @@
 
           <div class="form-group">
             <label class="form-group__label" for="telephone">Telephone number*</label>
-            <input class="form-group__input" type="tel" id="telephone" name="telephone" required>
+            <input class="form-group__input" type="tel" id="telephone" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" name="telephone" required>
           </div>
 
           <div class="form-group">
@@ -61,7 +61,7 @@
 
           <div class="form-group">
             <label class="form-group__label" for="topics">Favourite web development topics:</label>
-            <input class="form-group__input" type="text" id="topics" id="topics">
+            <input class="form-group__input" type="text" id="topics" id="topics" placeholder="BBQ, React, etc">
           </div>
           
           <div class="form-group">
