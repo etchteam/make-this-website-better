@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+html {
+  font-family: 'Nunito', sans-serif;
+  color: var(--text-col);
+}

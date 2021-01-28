@@ -1,0 +1,16 @@
+:root {
+  --white: #fff0ff;
+  --black: #222244;
+  --yellow: #ffe919;
+  --light-blue: #d3d3f0;
+  --blue: #0995b3;
+  --dark-blue: #0995b3;
+  --pink: #ff0066;
+  --dark-pink: #6e0932;
+
+  --text-col: var(--black);
+  --hero-bg-col1: rgb(190, 190, 238);
+  --hero-bg-col2: rgb(127, 127, 153);
+  --main-bg-col: var(--light-blue);
+  --footer-bg-col: var(--light-blue);
+}
