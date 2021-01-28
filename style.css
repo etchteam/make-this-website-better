@@ -1,5 +1,6 @@
 @import './styles/variables.css';
+@import './styles/animation.css';
 @import './styles/typography.css';
-@import './styles/utilities.css';
+@import './styles/utils.css';
 @import './styles/layout.css';
 @import './styles/components.css';

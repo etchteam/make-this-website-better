@@ -1,0 +1,6 @@
+.inline-link,
+.inline-link:visited {
+  text-decoration: none;
+  color: inherit;
+  color: var(--dark-pink);
+}
