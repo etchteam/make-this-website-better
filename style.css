@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Sora', serif;
 }
 
 .page {
@@ -33,15 +34,27 @@ body {
 }
 
 .hero {
-  background: #999;
+  background: #ddddff;
   padding: 5%;
+  border-radius: 0px 0px 25px 25px;
 }
 
 .main {
   flex: 1 1 auto;
   margin: auto;
-  max-width: 40em;
-  padding: 5%;
+  width: 75%;
+  padding: 10%;
+  background: #333366;
+  color: white;
+  border-radius: 25px;
+}
+
+.hero_image {
+  height: 120px;
+  width: 100px;
+  display: inline;
+  margin-left: 80%;
+  margin-right: auto;
 }
 
 .footer {
