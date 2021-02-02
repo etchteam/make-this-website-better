@@ -1,7 +1,17 @@
-# Make this website better
+I've updated the following:
 
-This is a coding challenge for Etch Junior Developer job applicants.
+Accessibility Features:
+Updated the HTML tag for English
+Updated the img tag to include an alt for screen readers
 
-We would like you to fork this repo, make the website better and open a PR that describes what has been done and why it's better.
+Formatting:
+I used an online formatter to ensure the code complies to industry standard.
 
-There's no right answer, we just want to see what you're interested in.
+Brand Guidelines:
+Continued to follow the style guide on the current website.
+Updated the colour scheme to use the 2 purples colours on https://etch.co/ homepage.
+Updated the fonts to use Google Fonts - I tried to get one similar to your current website. I would ensure that the font was the same for production.
+
+Form Updates
+I've updated a few of the forms to ensure that the correct type is set (date/tel/etc)
+For production, I would potentially update this to be a postcode and use Google Maps API to automatically input the users address based on the postcode.
