@@ -67,11 +67,12 @@ body {
 }
 .hero__subtitle a {
   text-decoration: none;
-}
-.hero__subtitle a:hover {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 900;
   color: #ff6666;
+}
+.hero__subtitle a:hover {
+  text-decoration: underline;
 }
 
 .main {
@@ -182,15 +183,19 @@ outline: none;
 
 .form-group__label {
   display: block;
+  font-weight: 900;
+  margin-bottom: 5px;
 }
 
 .form-group__input {
   display: block;
   width: 70%;
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 1px solid #cacaca;
   padding: 10px;
   border-radius: 30px;
+  outline: none;
+  font-size: 16px;
 }
 .form-group__input:focus {
   box-shadow: 5px 10px #ddddff;
@@ -211,6 +216,7 @@ outline: none;
 .form-group__input__text {
   width: 70%;
   height: 100px;
+  border: 1px solid #cacaca;
 }
 
 .form-group__button {
