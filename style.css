@@ -1,6 +1,21 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Nunito Sans";
+ 
+}
+
+#bG {
+  height: 100%;
+  width: 100%;
+  background-color: #ddddff ;
+  clip-path: polygon(100% 0, 100% 47%, 0 100%, 0 0);
+  position: absolute;
+  z-index: -1;
+}
+
+.contentWrapper {
+ 
 }
 
 .page {
@@ -11,9 +26,12 @@ body {
 
 .navbar {
   align-items: center;
-  background: black;
+  background: #ddddff;
   display: flex;
   padding: 1em;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 .navbar__logo {
@@ -27,30 +45,139 @@ body {
 }
 
 .navbar__link {
-  color: white;
+  color: black;
   margin: 0 .5em;
   text-decoration: none;
 }
+.navbar__link:hover {
+  text-decoration:underline ;
+}
 
 .hero {
-  background: #999;
   padding: 5%;
+  z-index: 1000;
+ 
+}
+.hero__title {
+  font-weight: 900;
+  font-size: 48px;
+}
+.hero__subtitle {
+  font-size: 20px;
+}
+.hero__subtitle a {
+  text-decoration: none;
+}
+.hero__subtitle a:hover {
+  font-size: 30px;
+  font-weight: 900;
+  color: #ff6666;
 }
 
 .main {
   flex: 1 1 auto;
-  margin: auto;
+  margin:auto;
   max-width: 40em;
   padding: 5%;
+  /*making the content of the modal */
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.8s;
+  
+}
+
+
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0px; opacity: 1}
+}
+
+.buttonWrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#myBtn {
+width: 250px;
+height: 45px;
+font-size: 11px;
+text-transform: uppercase;
+letter-spacing: 2.5px;
+font-weight: 500;
+color: #000;
+background-color: #fff;
+border: none;
+border-radius: 45px;
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease 0s;
+cursor: pointer;
+outline: none;
+}
+#myBtn:hover {
+  background-color: #ff6666;
+  box-shadow: 0px 15px 20px rgba(255,102,102, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.content__image {
+  height: 450px;
+  width: auto;
+
+}
+
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #ddddff;
+  color: white;
+  z-index: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 500; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .footer {
-  background: #999;
+  background: #fff;
   padding: 5%;
 }
 
 .form-group {
   margin-bottom: 1em;
+  margin-left: 150px;
 }
 
 .form-group__label {
@@ -59,5 +186,47 @@ body {
 
 .form-group__input {
   display: block;
-  width: 100%;
+  width: 70%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 30px;
+}
+.form-group__input:focus {
+  box-shadow: 5px 10px #ddddff;
+
+}
+.checkboxes__wrapper {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: stretch;
+  
+}
+.checkbox__container {
+  margin-right: 15px;
+}
+.form-group__input__text {
+  width: 70%;
+  height: 100px;
+}
+
+.form-group__button {
+  margin-left: 30%;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 1);
+  margin-bottom: 20px;
+  
+}
+
+.hide-element {
+  border: 0;
+  clip: rect(1px 1px 1px 1px); 
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
