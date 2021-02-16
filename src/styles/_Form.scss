@@ -1,0 +1,53 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 248px);
+
+  &-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    &__label {
+      font-weight: bold;
+      margin-bottom: 1rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    &__input {
+      &-textarea {
+        width: 300px;
+        height: 150px;
+        resize: none
+      }
+    }   
+
+    &__checkboxes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    &__checkbox {
+      margin-right: 1em;
+    }
+  }
+
+  &__navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.form-group__checkboxes-item + .form-group__checkboxes-item {
+  margin-top: 1em;
+}

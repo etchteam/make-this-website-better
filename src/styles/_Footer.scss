@@ -1,0 +1,57 @@
+@import "_Variables.scss";
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $brand-colour--primary;
+    background: $brand-colour--secondary;
+    padding: 3em 6em;
+
+    &__copyright {
+        color: $brand-colour--primary;
+        text-decoration: none;
+        opacity: .75;
+        font-weight: 900;
+        position: relative;
+
+        &:after {
+            display: block;
+            top: 25px;
+            width: 100%;
+            content: '';
+            border-bottom: solid 1px $brand-colour--primary;
+            transform: scaleX(0);  
+            transition: transform 250ms ease-in-out;
+            position: absolute;
+        }
+
+        &:hover,
+        &:focus {
+            color: $brand-colour--primary;
+            opacity: 1;
+            &:after {
+                transform: scaleX(1);
+            }
+        }
+    }
+
+    &__logo {
+        &-link {
+            margin-bottom: 1em;
+            transition: 0.25s;
+    
+            &:hover {
+              transform: scale(1.05);
+            }
+        }
+
+        &-img {
+            height: 32px;
+            margin: right 2em;
+            width: 76px;
+        }
+    }
+
+}
