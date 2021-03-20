@@ -4,24 +4,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register to work at Etch</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize-css@2.3.1/normalize.css">
+  <title>Apply to work at Etch</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
   <header>
+    <a href="https://etch.co/">
+      <img id="navbar_logo" src="./assets/logo.svg" alt="etch logo">
+    </a>
     <nav>
-      <img class="navbar__logo" src="./assets/logo.svg">
       <ul>
         <li><a href="https://etch.co/team" target="_blank">Team</a></li>
         <li><a href="https://etch.co/work" target="_blank">Work</a></li>
-        <li><a href="https://etch.co/jobs" target="_blank">Jobs</a></li>
       </ul>
     </nav>
+    <a id="jobs-link" href="https://etch.co/jobs" target="_blank">Jobs</a>
   </header>
 
   <main>
+    <section>
+      <h1>Wanna be part of the Beardy, Nerdy Gang?</h1>
+      <h2>Submit your application using the form below</h2>
+      <form class="form" action="https://formspree.io/f/xaylazjw" method="POST">
+        <input type="hidden" name="id" value="123456">
+
+        <input type="text" name="name" placeholder="Your Full Name">
+        <input type="email" name="email" placeholder="Your Email Address">
+        <input type="text" name="telephone" placeholder="Your Phone Number">
+        <input type="file" id="cv" name="cv">
+        <textarea name="why" placeholder="Why do you want to work at Etch?"></textarea>
+
+        <p>Are you a BBQ Fan?</p>
+        <label class="radio-label" for="yes">Yes
+          <input type="radio" id="yes" name="bbq" value="Yes" checked aria-checked="true">
+          <span class="radio-button"></span>
+        </label>
+        <label class="radio-label" for="alsoYes">Also Yes
+          <input type="radio" id="alsoYes" name="bbq" value="alsoYes">
+          <span class="radio-button"></span>
+        </label>
+
+        <button>Submit</button>
+
+      </form>
+    </section>
+
     <section>
       <h1>Good Software takes TEAM work.</h1>
       <div>
@@ -33,59 +61,17 @@
         <img src="assets/newteammemberphoto.png" alt="Blank Profile Picture">
       </div>
     </section>
-
-    <section>
-      <h2>I want to be part of the Beardy, Nerdy Gang</h2>
-      <form class="form" action="https://formspree.io/f/xaylazjw" method="POST">
-        <input type="hidden" name="id" value="123456">
-
-        <label class="form-group__label">Name
-          <input class="form-group__input" type="text" name="name">
-        </label>
-
-        <label class="form-group__label">Email
-          <input class="form-group__input" type="text" name="email">
-        </label>
-
-        <label class="form-group__label">Date of birth
-          <input class="form-group__input" type="text" name="dob">
-        </label>
-
-        <label class="form-group__label">Telephone number
-          <input class="form-group__input" type="text" name="telephone">
-        </label>
-
-        <label class="form-group__label">Address
-          <input class="form-group__input" type="text" name="address">
-        </label>
-
-        <label class="form-group__label">Number of years experience
-          <input class="form-group__input" type="text" name="years">
-        </label>
-
-        <label class="form-group__label">Number of years experience
-          <input class="form-group__input" type="text" name="years">
-        </label>
-
-        <p>Are you a BBQ Fan?</p>
-        <input type="radio" id="yes" name="bbq" value="Yes" checked aria-checked="true">
-        <label for="yes">Yes</label>
-        <input type="radio" id="alsoYes" name="bbq" value="alsoYes">
-        <label for="alsoYes">Also Yes</label>
-
-        <div class="form-group">
-          <label class="form-group__label">Why I want to work at Etch</label>
-          <textarea name="why" class="form-group__input"></textarea>
-        </div>
-
-        <button>Submit Application</button>
-
-      </form>
-    </section>
   </main>
 
   <footer>
-    &copy;2020 Etch Software Ltd.
+    <div id="socials-containers">
+      <a href="https://twitter.com/etch" target="blank"><img src="./assets/twitter.svg" alt="link to twitter"></a>
+      <a href="https://blog.etch.team/" target="blank"><img src="./assets/medium.svg" alt="link to twitter"></a>
+      <a href="https://www.instagram.com/etch.team/" target="blank"><img src="./assets/instagram.svg" alt="link to twitter"></a>
+      <a href="https://github.com/etchteam" target="blank"><img src="./assets/github (1).svg" alt="link to twitter"></a>
+    </div>
+    <a href="https://etch.co/jobs">We're hiring!</a>
+    <small>&copy;2020 Etch Software Ltd.</small>
   </footer>
 
   <script src="./script.js"></script>
