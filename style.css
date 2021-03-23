@@ -80,35 +80,43 @@ nav > ul > li > a {
 }
 
 h1 {
+  max-width: 600px;
   font-size: 38.5px;
   font-weight: 900;
   margin-bottom: 0;
 }
 
 h2 {
+  font-size: 66px;
+  font-weight: 900;
+  text-align: left;
+  margin-left: 40px;
+}
+
+h3 {
   font-size: 18px;
   font-weight: 400;
 }
 
-main {
+#application-form-main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-section {
+.application-form-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-section:last-child {
+.application-form-section:last-child {
   display: none;
 }
 
-form {
+#application-form {
   width: 340px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -118,14 +126,14 @@ form {
   justify-content: center;
 }
 
-form p {
+#application-form p {
   width: 100%;
   text-align: left;
   font-size: 14px;
   margin-left: 10px;
 }
 
-input {
+.application-form-input {
   width: 100%;
   height: 50px;
   margin: 10px 0 10px 0;
@@ -136,18 +144,18 @@ input {
   font-size: 14px;
 }
 
-input::placeholder, textarea::placeholder {
+.application-form-input::placeholder, #application-form-text::placeholder {
   color: var(--dark-blue);
 }
 
-input:hover, textarea:hover {
+.application-form-input:hover, #application-form-text:hover {
   background: var(--dark-blue);
   color: var(--light-purple);
   cursor: pointer;
   outline: none;
 }
 
-input:focus, textarea:focus {
+.application-form-input:focus, #application-form-text:focus {
   outline: none;
   background: var(--dark-blue);
   cursor: text;
@@ -155,19 +163,11 @@ input:focus, textarea:focus {
   font-family: 'Nunito Sans', sans-serif;
 }
 
-input:focus::placeholder, textarea:focus::placeholder {
+.application-form-input:focus::placeholder, #application-form-text:focus::placeholder {
   color: var(--dark-blue);
 }
 
-input[type="radio"] {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-textarea {
+#application-form-text {
   width: 100%;
   height: 100px;
   margin-top: 10px;
@@ -178,27 +178,29 @@ textarea {
   font-size: 14px;
 }
 
-input[type="file"] {
+#application-form-cv {
+  width: 100%;
+  background: var(--light-purple);
   border: dashed 1px var(--dark-blue);
   height: 50px;
   padding: 12px 10px 0 10px;
 }
 
-input[type="file"]:hover {
+#application-form-cv:hover {
   background: var(--light-purple);
   color: var(--dark-blue);
 }
 
-input[type="file"]:focus {
+#application-form-cv:focus {
   background: var(--light-purple);
   color: var(--dark-blue);
 }
 
-input[type="file"]::-webkit-file-upload-button {
+#application-form-cv::-webkit-file-upload-button {
   visibility: hidden;
 }
 
-input[type="file"]::before {
+#application-form-cv::before {
   content: 'Click to upload your CV';
   background: var(--light-purple);
   border-radius: 3px;
@@ -209,8 +211,16 @@ input[type="file"]::before {
   font-size: 14px;
 }
 
-input[type="file"]::before {
+#application-form-cv::before {
   border-color: black;
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
 
 .radio-label {
@@ -261,7 +271,7 @@ input[type="file"]::before {
   background: var(--dark-purple);
 }
 
-button {
+#application-form-submit {
   align-self: center;
   width: 200px;
   height: 50px;
@@ -274,7 +284,7 @@ button {
   border-radius: 80px;
 }
 
-button:hover {
+#application-form-submit:hover {
   cursor: pointer;
   background: var(--dark-blue);
   color: var(--light-purple);
@@ -292,28 +302,70 @@ footer {
   color: var(--light-purple);
 }
 
-footer > div {
+.footer-inner {
   flex-basis: 50%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  padding-left: 12px;
+  justify-content: center;
 }
 
-footer > div img {
+#social-icons-container {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#social-icons-container img {
   width: 20px;
   height: 20px;
-  margin: 0 5px 0 5px;
 }
 
-footer > a {
-  flex-basis: 50%;
+.footer-inner a {
   color: var(--light-purple);
   text-decoration: none;
   font-weight: 800;
 }
 
-small {
-  flex-basis: 50%;
+@media screen and (min-width: 600px) {
+
+  .footer-inner {
+    flex-basis: 33.3%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  body {
+    background: var(--white);
+  }
+
+  .application-form-section:first-child {
+    background: var(--background);
+    border-radius: 10px;
+    margin: 0 50px 50px 0;
+    padding: 20px;
+  }
+
+  #application-form-main {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+
+  .application-form-section:last-child {
+    display: flex;
+    padding: 0 50px 50px 0;
+  }
+
+  /* #application-form-submit {
+    background: var(--dark-blue);
+    color: var(--light-purple);
+  }
+  
+  #application-form-submit:hover {
+    background: var(--light-purple);
+    color: var(--dark-blue);
+  } */
 }

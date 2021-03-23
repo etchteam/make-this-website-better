@@ -22,18 +22,18 @@
     <a id="jobs-link" href="https://etch.co/jobs" target="_blank">Jobs</a>
   </header>
 
-  <main>
-    <section>
+  <main id="application-form-main">
+    <section class="application-form-section">
       <h1>Wanna be part of the Beardy, Nerdy Gang?</h1>
-      <h2>Submit your application using the form below</h2>
-      <form class="form" action="https://formspree.io/f/xaylazjw" method="POST">
+      <h3>Submit your application using the form below</h3>
+      <form id="application-form" action="https://formspree.io/f/xaylazjw" method="POST">
+        <small>Please make sure you complete the whole form.</small>
         <input type="hidden" name="id" value="123456">
-
-        <input type="text" name="name" placeholder="Your Full Name">
-        <input type="email" name="email" placeholder="Your Email Address">
-        <input type="text" name="telephone" placeholder="Your Phone Number">
-        <input type="file" id="cv" name="cv">
-        <textarea name="why" placeholder="Why do you want to work at Etch?"></textarea>
+        <input class="application-form-input" type="text" name="name" placeholder="Your Full Name" required>
+        <input class="application-form-input" type="email" name="email" placeholder="Your Email Address" required>
+        <input class="application-form-input" type="text" name="telephone" placeholder="Your Phone Number" required>
+        <input id="application-form-cv" type="file" id="cv" name="cv" required>
+        <textarea id="application-form-text" name="why" placeholder="Why do you want to work at Etch?" required></textarea>
 
         <p>Are you a BBQ Fan?</p>
         <label class="radio-label" for="yes">Yes
@@ -45,33 +45,33 @@
           <span class="radio-button"></span>
         </label>
 
-        <button>Submit</button>
+        <button id="application-form-submit">Submit</button>
 
       </form>
     </section>
 
-    <section>
-      <h1>Good Software takes TEAM work.</h1>
+    <section class="application-form-section">
+      <h2>Good Software takes team work.</h2>
       <div>
         <img src="/assets/jimramsdenphoto.png" alt="Jim Ramsden Photo">
         <img src="/assets/gavmckenziephoto.png" alt="Gav McKenzie Photo">
         <img src="/assets/joshrosephoto.png" alt="Josh Rose Photo">
-      </div>
-      <div>
-        <img src="assets/newteammemberphoto.png" alt="Blank Profile Picture">
+        <img id="new-team-member" src="assets/newteammemberphoto.png" alt="Blank Profile Picture">
       </div>
     </section>
   </main>
 
   <footer>
-    <div id="socials-containers">
+    <div class="footer-inner">
+      <div id="social-icons-container">
       <a href="https://twitter.com/etch" target="blank"><img src="./assets/twitter.svg" alt="link to twitter"></a>
       <a href="https://blog.etch.team/" target="blank"><img src="./assets/medium.svg" alt="link to twitter"></a>
       <a href="https://www.instagram.com/etch.team/" target="blank"><img src="./assets/instagram.svg" alt="link to twitter"></a>
       <a href="https://github.com/etchteam" target="blank"><img src="./assets/github (1).svg" alt="link to twitter"></a>
+      </div>
     </div>
-    <a href="https://etch.co/jobs">We're hiring!</a>
-    <small>&copy;2020 Etch Software Ltd.</small>
+    <div class="footer-inner"><a href="https://etch.co/jobs">We're hiring!</a></div>
+    <div class="footer-inner"><small>&copy;2020 Etch Software Ltd.</small></div>
   </footer>
 
   <script src="./script.js"></script>
