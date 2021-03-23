@@ -59,13 +59,16 @@ nav > ul > li {
   padding: 10px;
 }
 
-nav > ul > li > a {
+#nav-link-one {
+  border-bottom: 2px solid var(--dark-blue);
+}
+
+#nav-link, #nav-link-one {
   color: var(--dark-blue);
   text-decoration: none;
-  border-bottom: 2px solid var(--dark-blue);
   padding-bottom: 0.25px;
   font-weight: 900;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 #jobs-link {
