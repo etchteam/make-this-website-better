@@ -11,8 +11,7 @@ body {
 
 .hero {
   background: white;
-  padding: 1%;
-  text-align: center;
+  padding: 5%;
 }
 
 .main {
@@ -38,4 +37,13 @@ body {
 .form-group__input {
   display: block;
   width: 100%;
+}
+
+.contents {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  align-content: center;
+  /* width: 95%;
+  padding-top: 15%; */
 }
