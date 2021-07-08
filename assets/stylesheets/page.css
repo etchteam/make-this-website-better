@@ -21,11 +21,6 @@ body {
  
 }
 
-.footer {
-  background: #999;
-  padding: 5%;
-}
-
 .form-group {
   margin-bottom: 1em;
 }
@@ -50,4 +45,16 @@ body {
 
 .contact-us {
   padding: 5%;
+}
+
+h1 {
+  font-family: monoid;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+p {
+  font-family: Arial;
+  font-weight: 400;
+  font-stretch: normal;
 }

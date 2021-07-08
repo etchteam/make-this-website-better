@@ -2,6 +2,11 @@
 <html>
   <head>
     <title>Register to work at Etch</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize-css@2.3.1/normalize.css">
     <link rel="stylesheet" href="assets/stylesheets/index.css">
   </head>
@@ -47,26 +52,33 @@
         </div>
         <div class="contact-us">
           <!-- <form action=""> -->
-            <label class="form-group__label">Favourite web development topics</label>
+            <h1>Favourite web development topics</h1>
+            <div class="form-group__checkbox">
+              <label class="container" for="hex">Hex Colours
+                <input type="checkbox" checked="checked" id="hex" name="hex" name="faves[]" class="checkbox-black">
+                <span class="checkmark"></span>
+              </label>
+            </div>
             <div class="form-group__checkbox">
               <label for="hex">Hex Colours</label>
-              <input type="checkbox" id="hex" name="hex" class="form-group__checkbox" name="faves[]">
+              <input type="checkbox" id="hex" name="hex" name="faves[]" class="checkbox-black">
+              <span class="checkmark"></span>
             </div>
             <div class="form-group__checkbox">
               <label for="access">Accessibility</label>
-              <input type="checkbox" id="access" name="access" class="form-group__checkbox" name="faves[]">
+              <input type="checkbox" id="access" name="access" name="faves[]" class="checkbox-black">
             </div>
             <div class="form-group__checkbox">
               <label for="node">Node modules</label>
-              <input type="checkbox" id="node" name="node" class="form-group__checkbox" name="faves[]">
+              <input type="checkbox" id="node" name="node" name="faves[]" class="checkbox-black">
             </div>
             <div class="form-group__checkbox">
               <label for="Java">Javascript frameworks</label>
-              <input type="checkbox" id="Java" name="Java" class="form-group__checkbox" name="faves[]">
+              <input type="checkbox" id="Java" name="Java" name="faves[]" class="checkbox-black">
             </div>
             <div class="form-group__checkbox">
               <label for="bbq"> BBQ</label>
-              <input type="checkbox" id="bbq" name="bbq" class="form-group__checkbox" name="faves[]">
+              <input type="checkbox" id="bbq" name="bbq" name="faves[]" class="checkbox-black">
             </div>
             <!-- WHY I WANT TO WORK AT ETCH -->
             <label class="form-group__label">Why I want to work at Etch</label>

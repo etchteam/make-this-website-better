@@ -7,9 +7,9 @@
 }
 
 .navbar__logo {
-  height: 32px;
+  height: 50px;
   margin-right: 2em;
-  width: 76px;
+  width: 100px;
 }
 
 .navbar__links {
@@ -20,4 +20,8 @@
   color: black;
   margin: 0 .5em;
   text-decoration: none;
+}
+
+.navbar__link:hover {
+  color: #FF0066;
 }
