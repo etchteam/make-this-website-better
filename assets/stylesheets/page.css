@@ -42,7 +42,7 @@ body {
 .contents {
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: start;
   align-content: center;
   /* width: 95%;
   padding-top: 15%; */
