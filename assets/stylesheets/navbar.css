@@ -1,0 +1,23 @@
+.navbar {
+  align-items: center;
+  background: white;
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  height: 32px;
+  margin-right: 2em;
+  width: 76px;
+}
+
+.navbar__links {
+  display: flex;
+}
+
+.navbar__link {
+  color: black;
+  margin: 0 .5em;
+  text-decoration: none;
+}
