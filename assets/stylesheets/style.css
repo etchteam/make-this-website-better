@@ -11,9 +11,10 @@ body {
 
 .navbar {
   align-items: center;
-  background: black;
+  background: white;
   display: flex;
   padding: 1em;
+  justify-content: space-between;
 }
 
 .navbar__logo {
@@ -27,7 +28,7 @@ body {
 }
 
 .navbar__link {
-  color: white;
+  color: black;
   margin: 0 .5em;
   text-decoration: none;
 }
