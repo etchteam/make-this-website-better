@@ -28,7 +28,7 @@
         </div>
         <div class="contact-us">
           <!-- FORM -->
-          <form class="form main" action="https://formspree.io/f/xaylazjw" method="POST">
+          <form class="form" action="https://formspree.io/f/xaylazjw" method="POST">
             <input type="hidden" name="id" value="123456">
             <!-- FORM NAME -->
             <input class="form-group__input" type="text" name="name" placeholder="Name">
@@ -43,12 +43,31 @@
             <!-- FORM YEARS EXPERIENCE -->
             <input class="form-group__input" type="text" name="years" placeholder="Number of years experience">
             <!-- CHECKBOXES -->
+          </form>
+        </div>
+        <div class="contact-us">
+          <!-- <form action=""> -->
             <label class="form-group__label">Favourite web development topics</label>
-            <input class="form-group__checkbox" type="checkbox" name="faves[]"> Hex colours<br />
-            <input class="form-group__checkbox" type="checkbox" name="faves[]"> Accessibility<br />
-            <input class="form-group__checkbox" type="checkbox" name="faves[]"> Node modules<br />
-            <input class="form-group__checkbox" type="checkbox" name="faves[]"> Javascript frameworks<br />
-            <input class="form-group__checkbox" type="checkbox" name="faves[]"> BBQ<br />
+            <div class="form-group__checkbox">
+              <label for="hex">Hex Colours</label>
+              <input type="checkbox" id="hex" name="hex" class="form-group__checkbox" name="faves[]">
+            </div>
+            <div class="form-group__checkbox">
+              <label for="access">Accessibility</label>
+              <input type="checkbox" id="access" name="access" class="form-group__checkbox" name="faves[]">
+            </div>
+            <div class="form-group__checkbox">
+              <label for="node">Node modules</label>
+              <input type="checkbox" id="node" name="node" class="form-group__checkbox" name="faves[]">
+            </div>
+            <div class="form-group__checkbox">
+              <label for="Java">Javascript frameworks</label>
+              <input type="checkbox" id="Java" name="Java" class="form-group__checkbox" name="faves[]">
+            </div>
+            <div class="form-group__checkbox">
+              <label for="bbq"> BBQ</label>
+              <input type="checkbox" id="bbq" name="bbq" class="form-group__checkbox" name="faves[]">
+            </div>
             <!-- WHY I WANT TO WORK AT ETCH -->
             <label class="form-group__label">Why I want to work at Etch</label>
             <textarea name="why" class="form-group__input"></textarea>

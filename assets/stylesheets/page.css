@@ -18,7 +18,7 @@ body {
   flex: 1 1 auto;
   margin: auto;
   max-width: 40em;
-  padding: 5%;
+ 
 }
 
 .footer {
@@ -46,4 +46,8 @@ body {
   align-content: center;
   /* width: 95%;
   padding-top: 15%; */
+}
+
+.contact-us {
+  padding: 5%;
 }
