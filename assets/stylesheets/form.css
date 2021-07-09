@@ -8,7 +8,8 @@
   font-family: "Fjalla One";
   margin-bottom: 24pt;
   border: none;
-  border-bottom: 3px solid black;
+  /* border-bottom: 3px solid black; */
+  background-color: #F3F9E6;
   min-width: 250px;
   padding-left: 5px;
   outline: none;
