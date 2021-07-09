@@ -13,6 +13,7 @@ body {
 .hero {
   background: white;
   padding: 3%;
+  width: 30%;
 }
 
 .main {
@@ -33,6 +34,7 @@ body {
 
 .contact-us {
   padding: 3%;
+  width: 35%;
 }
 
 p {
