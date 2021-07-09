@@ -63,10 +63,10 @@ label {
 
 .title-font-style {
   font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 600;
   color: black;
   font-size: 14pt;
-  font-weight: 100;
-  border-bottom: 3px solid black;
+  /* border-bottom: 3px solid black; */
   margin-bottom: 24pt;
   line-height: 28pt;
 }
