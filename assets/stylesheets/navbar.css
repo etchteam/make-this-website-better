@@ -14,23 +14,24 @@
 .navbar__logo {
   height: 50px;
   margin-right: 2em;
-  width: 100px;
+  float: left
+  /* width: 100px; */
 }
 
 .navbar__links {
-  /* display: flex; */
-  text-align: center;
+
 }
 
 .navbar__link {
-  color: black;
+  color: #65657C;
   margin: 0 .5em;
   text-decoration: none;
 }
 
 .navbar__link:hover {
-  color: #FF0066;
+  color: #222244;
   font-weight: bold;
+  border-bottom: 3px solid #222244;
 }
 
 * {

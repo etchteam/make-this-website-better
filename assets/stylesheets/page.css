@@ -25,6 +25,7 @@ body {
 
 .contents {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: start;
   align-content: center;
@@ -42,3 +43,6 @@ p {
   font-weight: 400;
   font-stretch: normal;
 }
+
+/* Responsive Design */
+

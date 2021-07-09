@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Register to work at Etch</title>
+    <link rel="icon" type="image/png" href="https://etch.co/favicons/favicon-196x196.png">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,10 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize-css@2.3.1/normalize.css">
     <link rel="stylesheet" href="assets/stylesheets/index.css">
-
+    
     <link href="your-project-dir/icon-font/lineicons.css" rel="stylesheet">
   </head>
   <body>
@@ -30,6 +31,7 @@
         <a href="https://etch.co/work" target="_blank" class="navbar__link">Work</a>
       </div>
     </div>
+  
     <div class="page">
       <div class="contents">
         <div class="hero">
@@ -42,12 +44,12 @@
           <!-- FORM -->
           <form class="form" action="https://formspree.io/f/xaylazjw" method="POST">
             <input type="hidden" name="id" value="123456">
-            <input class="form-group__input pink" type="text" name="name" placeholder="Name">
-            <input class="form-group__input pink" type="text" name="email" placeholder="Email">Date of birth
-            <input class="form-group__input pink" type="date" name="dob" placeholder="Date of birth">
-            <input class="form-group__input pink" type="text" name="telephone" placeholder="Telephone">
-            <input class="form-group__input pink" type="text" name="address" placeholder="Address">
-            <input class="form-group__input pink" type="number" name="years" placeholder="Number of years experience">
+            <input class="form-group__input pink" type="text" name="name" placeholder="Name" required>
+            <input class="form-group__input pink" type="text" name="email" placeholder="Email" required>Date of birth
+            <input class="form-group__input pink" type="date" name="dob" placeholder="Date of birth" max="2004-01-01" min="1951-01-01" required>
+            <input class="form-group__input pink" type="text" name="telephone" placeholder="Telephone" pattern="((\+|00)?[1-9]{2}|0)[1-9]([0-9]){9}" required>
+            <input class="form-group__input pink" type="text" name="address" placeholder="Address" required>
+            <input class="form-group__input pink" type="number" name="years" placeholder="Number of years experience" required>
           </form>
         </div>
         <div class="contact-us">
@@ -56,8 +58,7 @@
             <div class="container-checkbox">
               <div class="container-form-checkbox">
               <!-- checkboxes -->
-              <i class="lni lni-paint-roller"></i>
-                <div class="form-group__checkbox checkbox">
+              <div class="form-group__checkbox">
                   <label class="container" for="hex">Hex Colours
                     <input type="checkbox" id="hex" name="hex" name="faves[]" class="checkbox-black">
                     <span class="checkmark"></span>
