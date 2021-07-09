@@ -8,7 +8,7 @@
   font-family: "Fjalla One";
   margin-bottom: 24pt;
   border: none;
-  border-bottom: 5px solid black;
+  border-bottom: 3px solid black;
   min-width: 250px;
   padding-left: 5px;
   outline: none;
@@ -24,34 +24,12 @@
   color: grey;
 }
 
-.checkbox {
-  border: 2px solid black;
-}
-
-.container input:checked .checkmark {
-  background-color: black;
+.container input:checked .checkmark .checkbox .checkbox-black {
+  background-color: black !important;
 }
 
 label {
   font-family: "Fjalla One";
-}
-
-button {
-  display: block;
-  margin: 0 auto;
-  line-height: 28pt;
-  padding: 0 20px;
-  background: #FF6666;
-  letter-spacing: 2px;
-  transition: 0.2s all ease-in-out;
-  outline: none;
-  border: 1px solid black;
-  box-shadow: 3px 3px 1px #FF0066, 3px 3px 1px 1px black;
-}
-button:hover {
-  background: black;
-  color: white;
-  border: 1px solid black;
 }
 
 ::selection {
@@ -63,3 +41,25 @@ button:hover {
   min-width: none;
 }
 
+.form-group {
+  margin-bottom: 1em;
+}
+
+.form-group__label {
+  display: block;
+}
+
+.form-group__input {
+  display: block;
+  width: 100%;
+}
+
+.title-font-style {
+  font-family: "Fjalla One";
+  color: black;
+  font-size: 14pt;
+  font-weight: 100;
+  border-bottom: 3px solid black;
+  margin-bottom: 24pt;
+  line-height: 28pt;
+}

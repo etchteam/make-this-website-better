@@ -1,0 +1,17 @@
+button {
+  display: block;
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #FF6666;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px #FF0066, 3px 3px 1px 1px black;
+}
+button:hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}

@@ -7,6 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin-top: 5%;
 }
 
 .hero {
@@ -21,19 +22,6 @@ body {
  
 }
 
-.form-group {
-  margin-bottom: 1em;
-}
-
-.form-group__label {
-  display: block;
-}
-
-.form-group__input {
-  display: block;
-  width: 100%;
-}
-
 .contents {
   display: flex;
   align-items: flex-start;
@@ -45,16 +33,6 @@ body {
 
 .contact-us {
   padding: 3%;
-}
-
-.title-font-style {
-  font-family: "Fjalla One";
-  color: grey;
-  font-size: 14pt;
-  font-weight: 100;
-  border-bottom: 5px solid black;
-  margin-bottom: 24pt;
-  line-height: 28pt;
 }
 
 p {
