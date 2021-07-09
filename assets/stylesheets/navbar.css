@@ -2,7 +2,7 @@
   align-items: center;
   background: white;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   padding: 1% 3%;
   position: fixed;
   top: 0;
@@ -19,7 +19,6 @@
 }
 
 .navbar__links {
-
 }
 
 .navbar__link {
