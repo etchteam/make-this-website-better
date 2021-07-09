@@ -6,9 +6,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize-css@2.3.1/normalize.css">
     <link rel="stylesheet" href="assets/stylesheets/index.css">
+
+    <link href="your-project-dir/icon-font/lineicons.css" rel="stylesheet">
   </head>
   <body>
     <div class="navbar">
@@ -28,7 +33,7 @@
     <div class="page">
       <div class="contents">
         <div class="hero">
-          <h1 class="hero__title">Register to work at Etch<strong class="pink">.</strong></h1>
+          <h1 class="hero__title">Register to work at Etch<strong class="bright-pink-logo">.</strong></h1>
           <p class="hero__subtitle">
             Simply fill in this form with your details to register your interest for working at <a class="link" href="https://etch.co" target="_blank">Etch</a>.
           </p>
@@ -37,12 +42,12 @@
           <!-- FORM -->
           <form class="form" action="https://formspree.io/f/xaylazjw" method="POST">
             <input type="hidden" name="id" value="123456">
-            <input class="form-group__input" type="text" name="name" placeholder="Name">
-            <input class="form-group__input" type="text" name="email" placeholder="Email">
-            <input class="form-group__input" type="text" name="dob" placeholder="Date of birth">
-            <input class="form-group__input" type="text" name="telephone" placeholder="Telephone">
-            <input class="form-group__input" type="text" name="address" placeholder="Address">
-            <input class="form-group__input" type="text" name="years" placeholder="Number of years experience">
+            <input class="form-group__input pink" type="text" name="name" placeholder="Name">
+            <input class="form-group__input pink" type="text" name="email" placeholder="Email">Date of birth
+            <input class="form-group__input pink" type="date" name="dob" placeholder="Date of birth">
+            <input class="form-group__input pink" type="text" name="telephone" placeholder="Telephone">
+            <input class="form-group__input pink" type="text" name="address" placeholder="Address">
+            <input class="form-group__input pink" type="number" name="years" placeholder="Number of years experience">
           </form>
         </div>
         <div class="contact-us">
@@ -51,6 +56,7 @@
             <div class="container-checkbox">
               <div class="container-form-checkbox">
               <!-- checkboxes -->
+              <i class="lni lni-paint-roller"></i>
                 <div class="form-group__checkbox checkbox">
                   <label class="container" for="hex">Hex Colours
                     <input type="checkbox" id="hex" name="hex" name="faves[]" class="checkbox-black">

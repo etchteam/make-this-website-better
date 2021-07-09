@@ -1,15 +1,23 @@
 .pink {
-
+  background-color: #F9E0EC;
 }
 
 .blue {
-
+  background-color: #E6F3F9;
 }
 
 .yellow {
-
+  background-color: #F3F9E6;
 }
 
 .peach {
-  
+  background-color: #FFE6E6;
+}
+
+.beige {
+  background-color: #F3ECEC;
+}
+
+.bright-pink-logo {
+  color: #FF6666;
 }

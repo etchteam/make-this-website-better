@@ -1,11 +1,14 @@
 .hero__title {
-  font-family: "Monoid";
-  font-weight: 100;
-  font-size: 28px;
+  /* font-family: "Monoid"; */
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
 }
 
-.pink {
-  color: #FF6666;
+.hero__subtitle {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
 }
 
 .link {
