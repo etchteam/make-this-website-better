@@ -28,61 +28,60 @@
     <div class="page">
       <div class="contents">
         <div class="hero">
-          <h1 class="hero__title">Register to work at Etch</h1>
+          <h1 class="hero__title">Register to work at Etch<strong class="pink">.</strong></h1>
           <p class="hero__subtitle">
-            Simply fill in this form with your details to register your interest for working at <a href="https://etch.co" target="_blank">Etch</a>.
+            Simply fill in this form with your details to register your interest for working at <a class="link" href="https://etch.co" target="_blank">Etch</a>.
           </p>
         </div>
         <div class="contact-us">
           <!-- FORM -->
           <form class="form" action="https://formspree.io/f/xaylazjw" method="POST">
             <input type="hidden" name="id" value="123456">
-            <!-- FORM NAME -->
             <input class="form-group__input" type="text" name="name" placeholder="Name">
-            <!-- FORM EMAIL -->
             <input class="form-group__input" type="text" name="email" placeholder="Email">
-            <!-- FORM DOB -->
             <input class="form-group__input" type="text" name="dob" placeholder="Date of birth">
-            <!-- FORM TELEPHONE -->
             <input class="form-group__input" type="text" name="telephone" placeholder="Telephone">
-            <!-- FORM ADDRESS -->
             <input class="form-group__input" type="text" name="address" placeholder="Address">
-            <!-- FORM YEARS EXPERIENCE -->
             <input class="form-group__input" type="text" name="years" placeholder="Number of years experience">
-            <!-- CHECKBOXES -->
           </form>
         </div>
         <div class="contact-us">
-          <!-- <form action=""> -->
+            <!-- CHECKBOXES -->
             <h2 class="title-font-style">Favourite web development topics?</h2>
-            <div class="form-group__checkbox checkbox">
-              <label class="container" for="hex">Hex Colours
-                <input type="checkbox" id="hex" name="hex" name="faves[]" class="checkbox-black">
-                <span class="checkmark"></span>
-              </label>
-            </div>
-            <div class="form-group__checkbox">
-              <label for="access">Accessibility</label>
-              <input type="checkbox" id="access" name="access" name="faves[]" class="checkbox-black">
-            </div>
-            <div class="form-group__checkbox">
-              <label for="node">Node modules</label>
-              <input type="checkbox" id="node" name="node" name="faves[]" class="checkbox-black">
-            </div>
-            <div class="form-group__checkbox">
-              <label for="Java">Javascript frameworks</label>
-              <input type="checkbox" id="Java" name="Java" name="faves[]" class="checkbox-black">
-            </div>
-            <div class="form-group__checkbox">
-              <label for="bbq"> BBQ</label>
-              <input type="checkbox" id="bbq" name="bbq" name="faves[]" class="checkbox-black">
+            <div class="container-checkbox">
+              <div class="container-form-checkbox">
+              <!-- checkboxes -->
+                <div class="form-group__checkbox checkbox">
+                  <label class="container" for="hex">Hex Colours
+                    <input type="checkbox" id="hex" name="hex" name="faves[]" class="checkbox-black">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-group__checkbox">
+                  <label for="access">Accessibility</label>
+                  <input type="checkbox" id="access" name="access" name="faves[]" class="checkbox-black">
+                </div>
+                <div class="form-group__checkbox">
+                  <label for="Java">Javascript frameworks</label>
+                  <input type="checkbox" id="Java" name="Java" name="faves[]" class="checkbox-black">
+                </div>
+              </div>
+              <div class="container-form-checkbox">
+                <div class="form-group__checkbox">
+                  <label for="bbq"> BBQ</label>
+                  <input type="checkbox" id="bbq" name="bbq" name="faves[]" class="checkbox-black">
+                </div>
+                <div class="form-group__checkbox">
+                  <label for="node">Node modules</label>
+                  <input type="checkbox" id="node" name="node" name="faves[]" class="checkbox-black">
+                </div>
+              </div>
             </div>
             <!-- WHY I WANT TO WORK AT ETCH -->
             <label class="form-group__label title-font-style">Why I want to work at Etch?</label>
-            <textarea name="why" class="form-group__input"></textarea>
+            <textarea name="why" class="form-group__textbox"></textarea>
             <!-- BUTTON -->
-            <button>I want to work at Etch</button>  
-          </form>
+            <button>I want to work at Etch</button>
         </div>
       </div>
       

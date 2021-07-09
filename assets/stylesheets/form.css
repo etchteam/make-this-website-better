@@ -54,6 +54,14 @@ label {
   width: 100%;
 }
 
+.form-group__textbox {
+  display: block;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
 .title-font-style {
   font-family: "Fjalla One";
   color: black;
@@ -62,4 +70,9 @@ label {
   border-bottom: 3px solid black;
   margin-bottom: 24pt;
   line-height: 28pt;
+}
+
+.container-checkbox {
+  display: flex;
+  flex-wrap: wrap;
 }
