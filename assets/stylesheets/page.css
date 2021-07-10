@@ -29,6 +29,7 @@ body {
   align-items: flex-start;
   justify-content: start;
   align-content: center;
+  overflow:auto;
   /* width: 95%;
   padding-top: 15%; */
 }
@@ -36,6 +37,7 @@ body {
 .contact-us {
   padding: 3%;
   width: 35%;
+  overflow:auto;
 }
 
 p {
