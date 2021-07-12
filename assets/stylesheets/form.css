@@ -21,10 +21,11 @@
   font-size: 12pt;
   font-weight: 200;
   padding: 6px 16px;
+  transition: padding 0.25s ease-in-out ;
 }
 
-.container input:checked .checkmark .checkbox .checkbox-black {
-  background-color: black !important;
+.form-group__checkbox:hover {
+  padding: 10px 16px;
 }
 
 label {
