@@ -47,8 +47,8 @@
           <form class="form" action="https://formspree.io/f/xaylazjw" method="POST">
             <input type="hidden" name="id" value="123456">
             <input class="form-group__input pink" type="text" name="name" placeholder="Name" required>
-            <input class="form-group__input pink" type="text" name="email" placeholder="Email" required>Date of birth
-            <input class="form-group__input pink" type="date" name="dob" placeholder="Date of birth" max="2004-01-01" min="1951-01-01" required>
+            <input class="form-group__input pink" type="email" name="email" placeholder="Email" required>Date of birth
+            <input class="form-group__input pink" type="date" name="dob" placeholder="Date of birth" max="2005-01-01" min="1946-01-01" required>
             <input class="form-group__input pink" type="text" name="telephone" placeholder="Telephone" pattern="((\+|00)?[1-9]{2}|0)[1-9]([0-9]){9}" required>
             <input class="form-group__input pink" type="text" name="address" placeholder="Address" required>
             <input class="form-group__input pink" type="number" name="years" placeholder="Number of years experience" min="0" required>
@@ -89,9 +89,9 @@
             </div>
             <!-- WHY I WANT TO WORK AT ETCH -->
             <label class="form-group__label title-font-style">Why I want to work at Etch?</label>
-            <textarea name="why" class="form-group__textbox pink"></textarea>
+            <textarea name="why" class="form-group__textbox pink" maxlength="1500"></textarea>
             <!-- BUTTON -->
-            <button>I want to work at Etch</button>
+            <button class="btn pink">I want to work at Etch</button>
         </div>
       </div>
       

@@ -22,6 +22,8 @@
   color: #65657C;
   margin: 0 .5em;
   text-decoration: none;
+  transition: color 0.25s ease-in-out;
+  transition: border-bottom 0.25s ease-in-out;
 }
 
 .navbar__link:hover {

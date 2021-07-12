@@ -8,7 +8,6 @@
   font-family: 'Noto Sans JP', sans-serif;
   margin-bottom: 24pt;
   border: none;
-  min-width: 250px;
   padding-left: 5px;
   outline: none;
   color: black !important;
@@ -17,10 +16,11 @@
 .form-group__checkbox {
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 28pt;
-  margin-bottom: 8pt;
+  margin-bottom: 12pt;
+  margin-right: 32px;
   font-size: 12pt;
   font-weight: 200;
-  /* color: grey; */
+  padding: 6px 16px;
 }
 
 .container input:checked .checkmark .checkbox .checkbox-black {
@@ -33,11 +33,6 @@ label {
 
 ::selection {
   background: #ffc8ff;
-}
-
-.form {
-  padding: 5%;
-  min-width: none;
 }
 
 .form-group {
@@ -59,21 +54,23 @@ label {
   height: 120px;
   margin-bottom: 20px;
   font-size: 12px;
+  border-style: none;
 }
 
 .title-font-style {
   font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   color: black;
-  font-size: 14pt;
-  /* border-bottom: 3px solid black; */
-  margin-bottom: 24pt;
+  font-size: 12pt;
+  margin-bottom: 8pt;
   line-height: 28pt;
+  margin-block-start: 0em;
 }
 
 .container-checkbox {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */

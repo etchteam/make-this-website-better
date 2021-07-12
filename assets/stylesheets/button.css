@@ -1,17 +1,21 @@
-button {
-  display: block;
-  margin: 0 auto;
-  line-height: 28pt;
-  padding: 0 20px;
-  background: #FF6666;
-  letter-spacing: 2px;
-  transition: 0.2s all ease-in-out;
-  outline: none;
-  border: 1px solid black;
-  box-shadow: 3px 3px 1px #FF0066, 3px 3px 1px 1px black;
+.btn {
+  background-color: #FF0066 !important;
+  border-radius: .25em;
+  border: solid transparent;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Nunito Sans,Sans-Serif;
+  font-size: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.0;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color,transform .25s ease-in-out;
 }
-button:hover {
-  background: black;
-  color: white;
-  border: 1px solid black;
+
+.btn:hover {
+  background-color: #FF6666 !important;
 }
