@@ -37,12 +37,6 @@ body {
   overflow:auto;
 }
 
-p {
-  font-family: Arial;
-  font-weight: 400;
-  font-stretch: normal;
-}
-
 /* Responsive Design */
 .column {
   float: left;
