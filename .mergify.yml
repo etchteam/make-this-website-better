@@ -1,0 +1,10 @@
+pull_request_rules:
+  - name: Prevent pending review alerts
+    conditions:
+        - base=master
+    actions:
+        comment:
+            message: "Marking as wontfix to prevent pending review alerts"
+        label:
+            add:
+                - wontfix
