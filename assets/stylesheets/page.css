@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-top: 5%;
+}
+
+.hero {
+  background: white;
+  padding: 3%;
+  width: 30%;
+}
+
+.main {
+  flex: 1 1 auto;
+  margin: auto;
+  max-width: 40em;
+}
+
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: start;
+  align-content: center;
+  overflow:auto;
+}
+
+.contact-us {
+  padding: 3%;
+  width: 35%;
+  overflow:auto;
+}
+
+/* Responsive Design */
+.column {
+  float: left;
+}
+
+.contents:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
+}

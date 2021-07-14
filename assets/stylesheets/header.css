@@ -1,0 +1,13 @@
+.hero__title {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.hero__subtitle {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.link {
+  color: black;
+}

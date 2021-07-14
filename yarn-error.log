@@ -1,0 +1,36 @@
+Arguments: 
+  /home/emilydoswell/.nvm/versions/node/v14.15.0/bin/node /home/emilydoswell/.nvm/versions/node/v14.15.0/bin/yarn add @fontawesome/fontawesome-free
+
+PATH: 
+  ./bin:./node_modules/.bin:/home/emilydoswell/.nvm/versions/node/v14.15.0/bin:/home/emilydoswell/.pyenv/bin:/home/emilydoswell/.rbenv/shims:/home/emilydoswell/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu16.04onWindows_1604.2020.824.0_x64__79rhkp1fndgsc:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/RailsInstaller/Git/cmd:/mnt/c/RailsInstaller/Ruby2.3.3/bin:/mnt/c/Users/Emily/AppData/Local/Microsoft/WindowsApps:/mnt/c/Exercism:/mnt/c/Users/Emily/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Emily/AppData/Local/Programs/Microsoft VS Code/bin:/usr/local/sbin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@fontawesome%2ffontawesome-free: Not found
+      at Request.params.callback [as _callback] (/home/emilydoswell/.nvm/versions/node/v14.15.0/lib/node_modules/yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/home/emilydoswell/.nvm/versions/node/v14.15.0/lib/node_modules/yarn/lib/cli.js:140662:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/home/emilydoswell/.nvm/versions/node/v14.15.0/lib/node_modules/yarn/lib/cli.js:141634:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/home/emilydoswell/.nvm/versions/node/v14.15.0/lib/node_modules/yarn/lib/cli.js:141556:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1327:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
