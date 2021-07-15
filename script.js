@@ -1,8 +1,6 @@
-console.log('Connected!')
-
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-const background = document.querySelector(".page");
+
 
 hamburger.addEventListener("click", mobileMenu);
 
@@ -20,6 +18,3 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-// function lockScroll() {
-//     background.classList.toggle('lock-scroll');
-// }
