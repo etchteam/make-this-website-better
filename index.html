@@ -54,28 +54,50 @@
           </div>
 
           <div class="form-group">
-              <label for="form-address">Address line 1</label>
-              <input type="text" class="form-control" id="form-address" placeholder="house number and street name" required />
+            <label for="form-address">Address line 1</label>
+            <input type="text" class="form-control" id="form-address" placeholder="house number and street name" required />
+          </div>
+          <div class="form-group">
+            <label for="form-address2">Address line 2</label>
+            <input type="text" class="form-control" id="form-address2" placeholder="town"/>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="form-city">City</label>
+              <input type="text" class="form-control" id="form-city" placeholder="city" required>
             </div>
-            <div class="form-group">
-              <label for="form-address2">Address line 2</label>
-              <input type="text" class="form-control" id="form-address2" placeholder="town"/>
+            <div class="form-group col-md-6">
+              <label for="form-zip">Postcode</label>
+              <input type="text" class="form-control" id="form-zip" placeholder="postcode" required maxlength="8">
             </div>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="form-city">City</label>
-                <input type="text" class="form-control" id="form-city" placeholder="city" required>
-              </div>
-              <div class="form-group col-md-6">
-                <label for="form-zip">Postcode</label>
-                <input type="text" class="form-control" id="form-zip" placeholder="postcode" required maxlength="8">
-              </div>
-            </div>
+          </div>
 
           <div class="form-group">
             <label class="form-group__label">Your experience</label>
             <textarea class="form-control" type="text" name="years" placeholder="tell us a bit about your experience and in which technologies" required rows="3"></textarea>
           </div>
+
+
+          <div class="form-group">
+            <label class="form-group__label">Select your favourite web development topics</label>
+            <div class="form-group__checkbox">
+              <input class="input" type="checkbox" id="hex-colours" name="faves" value="hex-colours">
+              <label for="hex-colours">Hex Colours</label><br>
+            </div>
+            <div class="form-group__checkbox">
+              <input class="input" type="checkbox" id="node-modules" name="faves" value="node-modules">
+              <label for="node-modules">Node Modules</label><br>
+            </div>
+            <div class="form-group__checkbox">
+              <input class="input" type="checkbox" id="accessibility" name="faves" value="accessibility">
+              <label for="accessibility">Accessibility</label><br>
+            </div>
+            <div class="form-group__checkbox">
+              <input class="input" type="checkbox" id="js-frameworks" name="faves" value="js-frameworks">
+              <label for="js-frameworks">JavaScript Frameworks</label><br>
+            </div>
+          </div>
+
 
           <div class="form-group">
             <label for="why" class="form-group__label">Why I want to work at Etch</label>

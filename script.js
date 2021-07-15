@@ -1,11 +1,10 @@
-console.log('Connected!')
-
-const submit = document.getElementById('submit')
-const form = document.querySelector('.main')
-const subheading = document.querySelector('.hero__subtitle')
+console.log('Connected!');
+const submit = document.getElementById('submit');
 
 const submitForm = () => {
-  console.log('Submitted!')
+  const form = document.querySelector('.main');
+  const subheading = document.querySelector('.hero__subtitle');
+  console.log('Submitted!');
   form.innerHTML = "Thanks for your interest - we'll be in touch!";
   form.classList.add("form-confirmation")
   subheading.innerHTML = ""
@@ -17,4 +16,9 @@ submit.addEventListener("click", (event) => {
 });
 
 
-
+const checkbox = document.querySelectorAll('.input')
+checkbox.forEach(function(option){
+  option.addEventListener('click', function () {
+    option.parentElement.classList.toggle("highlight");
+  });
+});
