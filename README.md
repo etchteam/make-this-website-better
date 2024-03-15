@@ -1,7 +1,7 @@
 # Make this website better
 
-This is a coding challenge for Etch Junior Developer job applicants.
+This coding challenge is for people who want to work with us at [Etch](https://etch.co).
 
-We would like you to fork this repo, make the website better and open a PR that describes what has been done and why it's better.
+We’d like you to fork this repo, make the website better and open a pull request.
 
-There's no right answer, we just want to see what you're interested in.
+There’s no right or wrong answer, we simply want to see what you’re interested in.
