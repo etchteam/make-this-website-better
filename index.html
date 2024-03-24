@@ -52,55 +52,170 @@
           </h2>
         </section>
         <form class="form" action="https://formspree.io/f/xaylazjw" method="POST">
-            <input type="hidden" name="id" value="123456">
-  
-            <div class="form-group">
-              <label class="form-group__label">Name</label>
-              <input class="form-group__input" type="text" name="name">
+            <input type="hidden" name="id" value="123456"/>
+          <div class="form-group">
+            <label class="form-group__label" for="name"
+              >Name<span class="text--red">*</span></label
+            >
+            <input
+              class="form-group__input"
+              type="text"
+              name="name"
+              id="name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-group__label" for="email"
+              >Email<span class="text--red">*</span></label
+            >
+            <input
+              class="form-group__input"
+              type="email"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-group__label" for="dob">Date of birth</label>
+            <input class="form-group__input" type="date" name="dob" id="dob" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-group__label" for="telephone"
+              >Telephone number</label
+            >
+            <input
+              class="form-group__input"
+              type="tel"
+              name="telephone"
+              id="telephone"
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-group__label" for="address">Address</label>
+            <input
+              class="form-group__input"
+              type="text"
+              name="address"
+              id="address"
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-group__label" for="years">
+              Number of years experience
+            </label>
+            <select class="form-group__input" name="years" id="years">
+              <option disabled selected value>-- select an option --</option>
+              <option value="0">I'm looking for my first opportunity</option>
+              <option value="1">1 year</option>
+              <option value="2">2 years</option>
+              <option value="3">3 years</option>
+              <option value="4">4 years</option>
+              <option value="5+">5+ years</option>
+              <option value="10+">10+ years</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <legend class="form-group__label">
+              Favourite web development topics
+            </legend>
+            <ul>
+              <li>
+                <label class="form-group__label" for="hex">Hex colours</label>
+                <input
+                  class="form-group__checkbox"
+                  type="checkbox"
+                  id="bmw"
+                  name="favs"
+                  value="hex"
+                />
+              </li>
+              <li>
+                <label class="form-group__label" for="accessibility"
+                  >Accessibility</label
+                >
+                <input
+                  class="form-group__checkbox"
+                  type="checkbox"
+                  id="accessibility"
+                  name="accessibility"
+                  value="accessibility"
+                />
+              </li>
+              <li>
+                <label class="form-group__label" for="node">Node modules</label>
+                <input
+                  class="form-group__checkbox"
+                  type="checkbox"
+                  id="node"
+                  name="node"
+                  value="node"
+                />
+              </li>
+              <li>
+                <label class="form-group__label" for="frameworks"
+                  >Javascript frameworks</label
+                >
+                <input
+                  class="form-group__checkbox"
+                  type="checkbox"
+                  id="frameworks"
+                  name="frameworks"
+                  value="frameworks"
+                />
+              </li>
+              <li>
+                <label class="form-group__label" for="bbq">BBQ</label>
+                <input
+                  class="form-group__checkbox"
+                  type="checkbox"
+                  id="bbq"
+                  name="bbq"
+                  value="bbq"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <div class="form-group form-group--vertical">
+            <label class="form-group__label" for="why"
+              >Why I want to work at Etch<span class="text--red">*</span></label
+            >
+            <textarea
+              class="form-group__textarea"
+              name="why"
+              id="why"
+              required
+              maxlength="1000"
+            ></textarea>
+            <div class="counter">
+              <p class="counter__characters">0</p>
+              <p>/1000</p>
             </div>
-  
-            <div class="form-group">
-              <label class="form-group__label">Email</label>
-              <input class="form-group__input" type="text" name="email">
-            </div>
-  
-            <div class="form-group">
-              <label class="form-group__label">Date of birth</label>
-              <input class="form-group__input" type="text" name="dob">
-            </div>
-  
-            <div class="form-group">
-              <label class="form-group__label">Telephone number</label>
-              <input class="form-group__input" type="text" name="telephone">
-            </div>
-  
-            <div class="form-group">
-              <label class="form-group__label">Address</label>
-              <input class="form-group__input" type="text" name="address">
-            </div>
-  
-            <div class="form-group">
-              <label class="form-group__label">Number of years experience</label>
-              <input class="form-group__input" type="text" name="years">
-            </div>
-  
-            <div class="form-group">
-              <label class="form-group__label">Favourite web development topics</label>
-              <input class="form-group__checkbox" type="checkbox" name="faves[]"> Hex colours<br />
-              <input class="form-group__checkbox" type="checkbox" name="faves[]"> Accessibility<br />
-              <input class="form-group__checkbox" type="checkbox" name="faves[]"> Node modules<br />
-              <input class="form-group__checkbox" type="checkbox" name="faves[]"> Javascript frameworks<br />
-              <input class="form-group__checkbox" type="checkbox" name="faves[]"> BBQ<br />
-            </div>
-            
-            <div class="form-group">
-              <label class="form-group__label">Why I want to work at Etch</label>
-              <textarea name="why" class="form-group__input"></textarea>
-            </div>
-  
-  
-            <button>I want to work at Etch</button>
-          </form>
+          </div>
+
+          <div class="form-footer">
+            <hr />
+            <p class="form-footer__privacy">
+              <!-- replace <span> with <a class="link" href="" target="_blank"> for real working link  -->
+              By applying for this position, your data will be processed as per
+              Etch's <span>Privacy Policy</span>.
+            </p>
+            <input
+              class="form-footer__submit"
+              type="submit"
+              value="Submit Application"
+              disabled
+            />
+          </div>
+        </form>
       </main>
 
       <footer class="footer">
